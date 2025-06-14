@@ -56,11 +56,29 @@
     <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\DisputeResolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\DisputeResolution.Designer.cs">
+      <DependentUpon>DisputeResolution.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Register.cs">
       <SubType>Form</SubType>
@@ -73,8 +91,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="views\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\DisputeResolution.resx">
+      <DependentUpon>DisputeResolution.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
