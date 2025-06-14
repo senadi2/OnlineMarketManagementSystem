@@ -29,89 +29,89 @@
         private void InitializeComponent()
         {
             this.lblSellerProfile = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
+            this.lblSellerName = new System.Windows.Forms.Label();
             this.lblRating = new System.Windows.Forms.Label();
-            this.btnReviews = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSellerName = new System.Windows.Forms.TextBox();
             this.txtRating = new System.Windows.Forms.TextBox();
+            this.btnReviewList = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSellerProfile
             // 
             this.lblSellerProfile.AutoSize = true;
             this.lblSellerProfile.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSellerProfile.Location = new System.Drawing.Point(308, 31);
+            this.lblSellerProfile.Location = new System.Drawing.Point(322, 13);
             this.lblSellerProfile.Name = "lblSellerProfile";
             this.lblSellerProfile.Size = new System.Drawing.Size(181, 30);
             this.lblSellerProfile.TabIndex = 0;
             this.lblSellerProfile.Text = "Seller Profile";
             // 
-            // lblName
+            // lblSellerName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(79, 82);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(98, 21);
-            this.lblName.TabIndex = 1;
-            this.lblName.Text = "Seller Name";
+            this.lblSellerName.AutoSize = true;
+            this.lblSellerName.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSellerName.Location = new System.Drawing.Point(44, 67);
+            this.lblSellerName.Name = "lblSellerName";
+            this.lblSellerName.Size = new System.Drawing.Size(98, 21);
+            this.lblSellerName.TabIndex = 1;
+            this.lblSellerName.Text = "Seller Name";
             // 
             // lblRating
             // 
             this.lblRating.AutoSize = true;
             this.lblRating.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRating.Location = new System.Drawing.Point(79, 173);
+            this.lblRating.Location = new System.Drawing.Point(44, 153);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(60, 21);
             this.lblRating.TabIndex = 2;
             this.lblRating.Text = "Rating";
             // 
-            // btnReviews
+            // txtSellerName
             // 
-            this.btnReviews.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviews.Location = new System.Drawing.Point(82, 287);
-            this.btnReviews.Name = "btnReviews";
-            this.btnReviews.Size = new System.Drawing.Size(102, 30);
-            this.btnReviews.TabIndex = 3;
-            this.btnReviews.Text = "Review";
-            this.btnReviews.UseVisualStyleBackColor = true;
+            this.txtSellerName.Location = new System.Drawing.Point(172, 68);
+            this.txtSellerName.Name = "txtSellerName";
+            this.txtSellerName.Size = new System.Drawing.Size(511, 22);
+            this.txtSellerName.TabIndex = 3;
+            // 
+            // txtRating
+            // 
+            this.txtRating.Location = new System.Drawing.Point(172, 152);
+            this.txtRating.Name = "txtRating";
+            this.txtRating.Size = new System.Drawing.Size(511, 22);
+            this.txtRating.TabIndex = 4;
+            // 
+            // btnReviewList
+            // 
+            this.btnReviewList.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReviewList.Location = new System.Drawing.Point(149, 326);
+            this.btnReviewList.Name = "btnReviewList";
+            this.btnReviewList.Size = new System.Drawing.Size(133, 32);
+            this.btnReviewList.TabIndex = 5;
+            this.btnReviewList.Text = "ReviewList";
+            this.btnReviewList.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(484, 287);
+            this.btnBack.Location = new System.Drawing.Point(462, 326);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 30);
-            this.btnBack.TabIndex = 4;
+            this.btnBack.Size = new System.Drawing.Size(75, 32);
+            this.btnBack.TabIndex = 6;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(200, 75);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(398, 22);
-            this.txtName.TabIndex = 5;
-            // 
-            // txtRating
-            // 
-            this.txtRating.Location = new System.Drawing.Point(200, 167);
-            this.txtRating.Name = "txtRating";
-            this.txtRating.Size = new System.Drawing.Size(398, 22);
-            this.txtRating.TabIndex = 6;
             // 
             // SellerProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtRating);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnReviews);
+            this.Controls.Add(this.btnReviewList);
+            this.Controls.Add(this.txtRating);
+            this.Controls.Add(this.txtSellerName);
             this.Controls.Add(this.lblRating);
-            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblSellerName);
             this.Controls.Add(this.lblSellerProfile);
             this.Name = "SellerProfile";
             this.Text = "SellerProfile";
@@ -123,11 +123,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblSellerProfile;
-        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblSellerName;
         private System.Windows.Forms.Label lblRating;
-        private System.Windows.Forms.Button btnReviews;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSellerName;
         private System.Windows.Forms.TextBox txtRating;
+        private System.Windows.Forms.Button btnReviewList;
+        private System.Windows.Forms.Button btnBack;
     }
 }
