@@ -34,11 +34,11 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblCatergory = new System.Windows.Forms.Label();
             this.lblImage = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtCatergory = new System.Windows.Forms.TextBox();
+            this.txtImage = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -103,40 +103,40 @@
             this.lblImage.TabIndex = 5;
             this.lblImage.Text = "Image";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(404, 22);
-            this.textBox1.TabIndex = 6;
+            this.txtName.Location = new System.Drawing.Point(195, 74);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(404, 22);
+            this.txtName.TabIndex = 6;
             // 
-            // textBox2
+            // txtDescription
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(404, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtDescription.Location = new System.Drawing.Point(195, 118);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(404, 22);
+            this.txtDescription.TabIndex = 7;
             // 
-            // textBox3
+            // txtPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(195, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(404, 22);
-            this.textBox3.TabIndex = 8;
+            this.txtPrice.Location = new System.Drawing.Point(195, 161);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(404, 22);
+            this.txtPrice.TabIndex = 8;
             // 
-            // textBox4
+            // txtCatergory
             // 
-            this.textBox4.Location = new System.Drawing.Point(195, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(404, 22);
-            this.textBox4.TabIndex = 9;
+            this.txtCatergory.Location = new System.Drawing.Point(195, 205);
+            this.txtCatergory.Name = "txtCatergory";
+            this.txtCatergory.Size = new System.Drawing.Size(404, 22);
+            this.txtCatergory.TabIndex = 9;
             // 
-            // textBox5
+            // txtImage
             // 
-            this.textBox5.Location = new System.Drawing.Point(195, 250);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(404, 22);
-            this.textBox5.TabIndex = 10;
+            this.txtImage.Location = new System.Drawing.Point(195, 250);
+            this.txtImage.Name = "txtImage";
+            this.txtImage.Size = new System.Drawing.Size(404, 22);
+            this.txtImage.TabIndex = 10;
             // 
             // btnSave
             // 
@@ -165,11 +165,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtImage);
+            this.Controls.Add(this.txtCatergory);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblImage);
             this.Controls.Add(this.lblCatergory);
             this.Controls.Add(this.lblPrice);
@@ -191,11 +191,11 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblCatergory;
         private System.Windows.Forms.Label lblImage;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtCatergory;
+        private System.Windows.Forms.TextBox txtImage;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
     }
