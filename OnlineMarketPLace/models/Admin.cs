@@ -3,64 +3,51 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace OnlineMarketPLace.models
 {
-    class Admin
+    public class Admin : User
     {
-        public int AdminId { get; set; }
-        public string Username { get; set; }
-        private string Password { get; set; }
-        public string Email { get; set; }
         public string Role { get; set; }
 
         public Admin() { }
 
-        public Admin(int adminId, string username, string password, string email, string role)
+        public Admin(int userID, string username, string password, string email, string role)
+            : base(userID, username, password, email) // Call User constructor
         {
-            AdminId = adminId;
-            Username = username;
-            Password = password;
-            Email = email;
             Role = role;
         }
 
-        public void DisplayInfo()
+        public override void DisplayInfo()
         {
-            Console.WriteLine($"Admin ID: {AdminId}");
-            Console.WriteLine($"Username: {Username}");
-            Console.WriteLine($"Email: {Email}");
+            base.DisplayInfo(); // Call parent DisplayInfo()
             Console.WriteLine($"Role: {Role}");
         }
 
         public bool Authenticate(string password)
         {
-            // Simple authentication check
             return Password == password;
         }
 
         public void MonitorSellerActivity(string sellerUsername)
         {
             Console.WriteLine($"Monitoring activity for seller: {sellerUsername}");
-            // Implement monitoring logic here
         }
 
         public void ResolveDispute(string disputeId)
         {
             Console.WriteLine($"Resolving dispute with ID: {disputeId}");
-            // Implement dispute resolution logic here
         }
 
         public void BanUser(string username)
         {
             Console.WriteLine($"User {username} has been banned.");
-            // Implement user ban logic here
         }
 
         public void UnbanUser(string username)
         {
             Console.WriteLine($"User {username} has been unbanned.");
-            // Implement user unban logic here
         }
 
         public void MonitorSystem()
@@ -69,4 +56,3 @@ namespace OnlineMarketPLace.models
         }
     }
 }
-  
