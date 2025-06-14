@@ -37,10 +37,9 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtCatergory = new System.Windows.Forms.TextBox();
-            this.txtImage = new System.Windows.Forms.TextBox();
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
+            this.CmbCatergory = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblTopic
@@ -99,9 +98,8 @@
             this.lblImage.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImage.Location = new System.Drawing.Point(48, 251);
             this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(54, 21);
+            this.lblImage.Size = new System.Drawing.Size(0, 21);
             this.lblImage.TabIndex = 5;
-            this.lblImage.Text = "Image";
             // 
             // txtName
             // 
@@ -124,20 +122,6 @@
             this.txtPrice.Size = new System.Drawing.Size(441, 22);
             this.txtPrice.TabIndex = 8;
             // 
-            // txtCatergory
-            // 
-            this.txtCatergory.Location = new System.Drawing.Point(168, 207);
-            this.txtCatergory.Name = "txtCatergory";
-            this.txtCatergory.Size = new System.Drawing.Size(441, 22);
-            this.txtCatergory.TabIndex = 9;
-            // 
-            // txtImage
-            // 
-            this.txtImage.Location = new System.Drawing.Point(168, 252);
-            this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(441, 22);
-            this.txtImage.TabIndex = 10;
-            // 
             // BtnSave
             // 
             this.BtnSave.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,15 +142,22 @@
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
             // 
+            // CmbCatergory
+            // 
+            this.CmbCatergory.FormattingEnabled = true;
+            this.CmbCatergory.Location = new System.Drawing.Point(168, 209);
+            this.CmbCatergory.Name = "CmbCatergory";
+            this.CmbCatergory.Size = new System.Drawing.Size(441, 24);
+            this.CmbCatergory.TabIndex = 13;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CmbCatergory);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnSave);
-            this.Controls.Add(this.txtImage);
-            this.Controls.Add(this.txtCatergory);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtName);
@@ -194,9 +185,8 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.TextBox txtCatergory;
-        private System.Windows.Forms.TextBox txtImage;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Button BtnCancel;
+        private System.Windows.Forms.ComboBox CmbCatergory;
     }
 }
