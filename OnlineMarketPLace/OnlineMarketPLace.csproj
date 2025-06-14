@@ -56,11 +56,29 @@
     <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\BuyerDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\BuyerDashBoard.Designer.cs">
+      <DependentUpon>BuyerDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ProductDetails.Designer.cs">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Register.cs">
       <SubType>Form</SubType>
@@ -73,8 +91,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="views\BuyerDashBoard.resx">
+      <DependentUpon>BuyerDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ProductDetails.resx">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
