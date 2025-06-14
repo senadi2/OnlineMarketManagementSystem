@@ -68,11 +68,23 @@
     <Compile Include="views\BuyerDashBoard.Designer.cs">
       <DependentUpon>BuyerDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\DisputeResolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\DisputeResolution.Designer.cs">
+      <DependentUpon>DisputeResolution.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="views\PlaceOrder.cs">
       <SubType>Form</SubType>
@@ -133,8 +145,14 @@
     <EmbeddedResource Include="views\BuyerDashBoard.resx">
       <DependentUpon>BuyerDashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\DisputeResolution.resx">
+      <DependentUpon>DisputeResolution.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\PlaceOrder.resx">
       <DependentUpon>PlaceOrder.cs</DependentUpon>
