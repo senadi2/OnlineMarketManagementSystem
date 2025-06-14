@@ -28,51 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblAdminControlPanel = new System.Windows.Forms.Label();
             this.btnManageUsers = new System.Windows.Forms.Button();
             this.btnViewOrders = new System.Windows.Forms.Button();
             this.btnResolveDisputes = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.lblNotifications = new System.Windows.Forms.Label();
-            this.lblAdminControlPanel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblAdminControlPanel
+            // 
+            this.lblAdminControlPanel.AutoSize = true;
+            this.lblAdminControlPanel.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdminControlPanel.Location = new System.Drawing.Point(438, 109);
+            this.lblAdminControlPanel.Name = "lblAdminControlPanel";
+            this.lblAdminControlPanel.Size = new System.Drawing.Size(313, 34);
+            this.lblAdminControlPanel.TabIndex = 0;
+            this.lblAdminControlPanel.Text = "Admin Control Panel";
             // 
             // btnManageUsers
             // 
-            this.btnManageUsers.Font = new System.Drawing.Font("Modern No. 20", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageUsers.Location = new System.Drawing.Point(246, 261);
+            this.btnManageUsers.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageUsers.Location = new System.Drawing.Point(248, 214);
             this.btnManageUsers.Name = "btnManageUsers";
-            this.btnManageUsers.Size = new System.Drawing.Size(192, 40);
-            this.btnManageUsers.TabIndex = 0;
+            this.btnManageUsers.Size = new System.Drawing.Size(188, 40);
+            this.btnManageUsers.TabIndex = 1;
             this.btnManageUsers.Text = "Manage Users";
             this.btnManageUsers.UseVisualStyleBackColor = true;
             // 
             // btnViewOrders
             // 
-            this.btnViewOrders.Font = new System.Drawing.Font("Modern No. 20", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewOrders.Location = new System.Drawing.Point(473, 261);
+            this.btnViewOrders.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewOrders.Location = new System.Drawing.Point(485, 214);
             this.btnViewOrders.Name = "btnViewOrders";
-            this.btnViewOrders.Size = new System.Drawing.Size(192, 40);
-            this.btnViewOrders.TabIndex = 1;
+            this.btnViewOrders.Size = new System.Drawing.Size(188, 40);
+            this.btnViewOrders.TabIndex = 2;
             this.btnViewOrders.Text = "View Orders";
             this.btnViewOrders.UseVisualStyleBackColor = true;
             // 
             // btnResolveDisputes
             // 
-            this.btnResolveDisputes.Font = new System.Drawing.Font("Modern No. 20", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResolveDisputes.Location = new System.Drawing.Point(703, 261);
+            this.btnResolveDisputes.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResolveDisputes.Location = new System.Drawing.Point(723, 214);
             this.btnResolveDisputes.Name = "btnResolveDisputes";
-            this.btnResolveDisputes.Size = new System.Drawing.Size(226, 40);
-            this.btnResolveDisputes.TabIndex = 2;
+            this.btnResolveDisputes.Size = new System.Drawing.Size(212, 40);
+            this.btnResolveDisputes.TabIndex = 3;
             this.btnResolveDisputes.Text = "Resolve Disputes";
             this.btnResolveDisputes.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
-            this.btnLogout.Font = new System.Drawing.Font("Modern No. 20", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(254, 491);
+            this.btnLogout.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(248, 464);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(112, 40);
-            this.btnLogout.TabIndex = 3;
+            this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
@@ -80,33 +90,23 @@
             // 
             this.lblNotifications.AutoSize = true;
             this.lblNotifications.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotifications.Location = new System.Drawing.Point(248, 382);
+            this.lblNotifications.Location = new System.Drawing.Point(242, 354);
             this.lblNotifications.Name = "lblNotifications";
             this.lblNotifications.Size = new System.Drawing.Size(195, 34);
-            this.lblNotifications.TabIndex = 4;
+            this.lblNotifications.TabIndex = 5;
             this.lblNotifications.Text = "Notifications";
-            // 
-            // lblAdminControlPanel
-            // 
-            this.lblAdminControlPanel.AutoSize = true;
-            this.lblAdminControlPanel.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminControlPanel.Location = new System.Drawing.Point(429, 141);
-            this.lblAdminControlPanel.Name = "lblAdminControlPanel";
-            this.lblAdminControlPanel.Size = new System.Drawing.Size(313, 34);
-            this.lblAdminControlPanel.TabIndex = 5;
-            this.lblAdminControlPanel.Text = "Admin Control Panel";
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1196, 770);
-            this.Controls.Add(this.lblAdminControlPanel);
+            this.ClientSize = new System.Drawing.Size(1259, 850);
             this.Controls.Add(this.lblNotifications);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnResolveDisputes);
             this.Controls.Add(this.btnViewOrders);
             this.Controls.Add(this.btnManageUsers);
+            this.Controls.Add(this.lblAdminControlPanel);
             this.Name = "AdminDashboard";
             this.Text = "AdminDashboard";
             this.ResumeLayout(false);
@@ -116,11 +116,11 @@
 
         #endregion
 
+        private System.Windows.Forms.Label lblAdminControlPanel;
         private System.Windows.Forms.Button btnManageUsers;
         private System.Windows.Forms.Button btnViewOrders;
         private System.Windows.Forms.Button btnResolveDisputes;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label lblNotifications;
-        private System.Windows.Forms.Label lblAdminControlPanel;
     }
 }
