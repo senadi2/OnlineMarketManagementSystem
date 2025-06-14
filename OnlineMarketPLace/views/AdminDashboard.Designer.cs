@@ -34,6 +34,7 @@
             this.btnResolveDisputes = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.lblNotifications = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAdminControlPanel
@@ -96,11 +97,20 @@
             this.lblNotifications.TabIndex = 5;
             this.lblNotifications.Text = "Notifications";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(666, 132);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 6;
+            // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1259, 850);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNotifications);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnResolveDisputes);
@@ -122,5 +132,6 @@
         private System.Windows.Forms.Button btnResolveDisputes;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label lblNotifications;
+        private System.Windows.Forms.Label label1;
     }
 }
