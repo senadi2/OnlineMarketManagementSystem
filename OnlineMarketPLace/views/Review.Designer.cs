@@ -136,6 +136,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "Review";
             this.Text = "Review";
+            this.Load += new System.EventHandler(this.Review_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

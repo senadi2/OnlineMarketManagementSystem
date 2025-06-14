@@ -104,6 +104,12 @@
     <Compile Include="views\TrackOrder.Designer.cs">
       <DependentUpon>TrackOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ViewProductReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ViewProductReviews.Designer.cs">
+      <DependentUpon>ViewProductReviews.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\TrackOrder.resx">
       <DependentUpon>TrackOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ViewProductReviews.resx">
+      <DependentUpon>ViewProductReviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
