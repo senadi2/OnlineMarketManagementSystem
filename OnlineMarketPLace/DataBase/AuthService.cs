@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 
-namespace OnlineMarketPLace.Services
+namespace OnlineMarketPLace.DataBase
 {
     public static class AuthService
     {
@@ -16,12 +15,12 @@ namespace OnlineMarketPLace.Services
                 conn.Open();
 
                 // Simple query - you should hash & salt passwords in production!
-                string query = "SELECT role FROM users WHERE username = @username AND password = @password LIMIT 1";
+                string query = "SELECT role FROM users WHERE username = @Username AND password = @Password LIMIT 1";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@username", username);
-                    cmd.Parameters.AddWithValue("@password", password); // For demo, store hashed passwords in real apps
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password); // For demo, store hashed passwords in real apps
 
                     var result = cmd.ExecuteScalar();
 

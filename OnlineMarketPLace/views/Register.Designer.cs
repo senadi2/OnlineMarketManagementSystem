@@ -1,6 +1,6 @@
-﻿namespace OnlineMarketPLace.views
+﻿namespace OnlineMarketplace
 {
-    partial class Register
+    partial class RegisterForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lbltopic = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.BtnRegister = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbAccType = new System.Windows.Forms.ComboBox();
@@ -40,8 +40,10 @@
             this.lblconfirm = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+
             // 
             // lbltopic
             // 
@@ -53,15 +55,16 @@
             this.lbltopic.TabIndex = 0;
             this.lbltopic.Text = "Create Account  ";
             // 
-            // btnRegister
+            // BtnRegister
             // 
-            this.btnRegister.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(157, 416);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(116, 40);
-            this.btnRegister.TabIndex = 9;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegister.Location = new System.Drawing.Point(157, 416);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(116, 40);
+            this.BtnRegister.TabIndex = 9;
+            this.BtnRegister.Text = "Register";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // btnCancel
             // 
@@ -72,6 +75,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // groupBox1
             // 
@@ -163,28 +167,29 @@
             this.lblName.TabIndex = 9;
             this.lblName.Text = "Username";
             // 
-            // Register
+            // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 497);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.lbltopic);
-            this.Name = "Register";
+            this.Name = "RegisterForm";
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
+
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
         private System.Windows.Forms.Label lbltopic;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button BtnRegister;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbAccType;

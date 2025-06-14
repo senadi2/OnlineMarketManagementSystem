@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using OnlineMarketPLace.Services;
+using OnlineMarketPLace.DataBase;
 
 namespace OnlineMarketplace
 {
@@ -18,21 +18,21 @@ namespace OnlineMarketplace
             string username = txtName.Text;
             string password = txtPassword.Text;
 
-            string role = AuthService.AuthenticateUser(username , password);
+            string role = AuthService.AuthenticateUser(username,password);
 
-            if (role == "Buyer")
+            if (role == "buyer")
             {
                 this.Hide();
                 BuyerDashBoard buyerDashboard = new BuyerDashBoard();
                 buyerDashboard.Show();
             }
-            else if (role == "Seller")
+            else if (role == "seller")
             {
                 this.Hide();
                 SellerDashBoard sellerDashboard = new SellerDashBoard();
                 sellerDashboard.Show();
             }
-            else if (role == "Admin")
+            else if (role == "admin")
             {
                 this.Hide();
                 AdminDashboard adminDashboard = new AdminDashboard();
@@ -46,7 +46,7 @@ namespace OnlineMarketplace
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            Register registerForm = new Register();
+            RegisterForm registerForm = new RegisterForm();
             this.Hide();
             registerForm.Show();
         }
@@ -55,7 +55,7 @@ namespace OnlineMarketplace
         {
            
         }
-
+        
         private void chkshpass_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = !chkshpass.Checked;
