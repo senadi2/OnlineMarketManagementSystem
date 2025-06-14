@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OnlineMarketPLace.views
 {
-    public partial class ProductList: Form
+    public partial class SellerProfile: Form
     {
-        public ProductList()
+        public SellerProfile()
         {
             InitializeComponent();
         }
