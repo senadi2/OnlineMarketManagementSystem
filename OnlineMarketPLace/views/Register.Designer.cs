@@ -93,6 +93,10 @@
             // cmbAccType
             // 
             this.cmbAccType.FormattingEnabled = true;
+            this.cmbAccType.Items.AddRange(new object[] {
+            "Buyer",
+            "Seller",
+            "Admin"});
             this.cmbAccType.Location = new System.Drawing.Point(277, 213);
             this.cmbAccType.Name = "cmbAccType";
             this.cmbAccType.Size = new System.Drawing.Size(249, 24);

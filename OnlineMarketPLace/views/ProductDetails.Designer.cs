@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblProductDetails = new System.Windows.Forms.Label();
-            this.btnPlaceOrder = new System.Windows.Forms.Button();
-            this.btnReview = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.picProduct = new System.Windows.Forms.PictureBox();
@@ -40,40 +37,12 @@
             this.lblImageTitle = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
+            this.btnReview = new System.Windows.Forms.Button();
+            this.btnPlaceOrder = new System.Windows.Forms.Button();
+            this.lblProductDetails = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProduct)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblProductDetails
-            // 
-            this.lblProductDetails.AutoSize = true;
-            this.lblProductDetails.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductDetails.Location = new System.Drawing.Point(282, 39);
-            this.lblProductDetails.Name = "lblProductDetails";
-            this.lblProductDetails.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblProductDetails.Size = new System.Drawing.Size(223, 30);
-            this.lblProductDetails.TabIndex = 0;
-            this.lblProductDetails.Text = " Product Details ";
-            // 
-            // btnPlaceOrder
-            // 
-            this.btnPlaceOrder.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrder.Location = new System.Drawing.Point(119, 662);
-            this.btnPlaceOrder.Name = "btnPlaceOrder";
-            this.btnPlaceOrder.Size = new System.Drawing.Size(134, 39);
-            this.btnPlaceOrder.TabIndex = 9;
-            this.btnPlaceOrder.Text = "Place Order";
-            this.btnPlaceOrder.UseVisualStyleBackColor = true;
-            // 
-            // btnReview
-            // 
-            this.btnReview.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReview.Location = new System.Drawing.Point(569, 662);
-            this.btnReview.Name = "btnReview";
-            this.btnReview.Size = new System.Drawing.Size(134, 39);
-            this.btnReview.TabIndex = 10;
-            this.btnReview.Text = "Leave Review";
-            this.btnReview.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -85,10 +54,10 @@
             this.groupBox1.Controls.Add(this.lblImageTitle);
             this.groupBox1.Controls.Add(this.lblName);
             this.groupBox1.Controls.Add(this.lblPrice);
-            this.groupBox1.Location = new System.Drawing.Point(80, 109);
+            this.groupBox1.Location = new System.Drawing.Point(73, 143);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(654, 523);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Product Details";
             // 
@@ -168,11 +137,42 @@
             this.lblPrice.TabIndex = 12;
             this.lblPrice.Text = "label2";
             // 
+            // btnReview
+            // 
+            this.btnReview.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReview.Location = new System.Drawing.Point(562, 696);
+            this.btnReview.Name = "btnReview";
+            this.btnReview.Size = new System.Drawing.Size(134, 39);
+            this.btnReview.TabIndex = 15;
+            this.btnReview.Text = "Leave Review";
+            this.btnReview.UseVisualStyleBackColor = true;
+            // 
+            // btnPlaceOrder
+            // 
+            this.btnPlaceOrder.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaceOrder.Location = new System.Drawing.Point(112, 696);
+            this.btnPlaceOrder.Name = "btnPlaceOrder";
+            this.btnPlaceOrder.Size = new System.Drawing.Size(134, 39);
+            this.btnPlaceOrder.TabIndex = 14;
+            this.btnPlaceOrder.Text = "Place Order";
+            this.btnPlaceOrder.UseVisualStyleBackColor = true;
+            // 
+            // lblProductDetails
+            // 
+            this.lblProductDetails.AutoSize = true;
+            this.lblProductDetails.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductDetails.Location = new System.Drawing.Point(275, 73);
+            this.lblProductDetails.Name = "lblProductDetails";
+            this.lblProductDetails.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblProductDetails.Size = new System.Drawing.Size(223, 30);
+            this.lblProductDetails.TabIndex = 13;
+            this.lblProductDetails.Text = " Product Details ";
+            // 
             // ProductDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 723);
+            this.ClientSize = new System.Drawing.Size(800, 754);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnReview);
             this.Controls.Add(this.btnPlaceOrder);
@@ -189,9 +189,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblProductDetails;
-        private System.Windows.Forms.Button btnPlaceOrder;
-        private System.Windows.Forms.Button btnReview;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.PictureBox picProduct;
@@ -201,5 +198,8 @@
         private System.Windows.Forms.Label lblImageTitle;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Button btnReview;
+        private System.Windows.Forms.Button btnPlaceOrder;
+        private System.Windows.Forms.Label lblProductDetails;
     }
 }
