@@ -12,7 +12,7 @@ namespace OnlineMarketPLace.models
         public string ProductId { get; set; }
         public string BuyerUsername { get; set; }
         public string SellerUsername { get; set; }
-        public int Rating { get; set; } // Rating from 1 to 5
+        public int Rating { get; set; } 
         public string Comment { get; set; }
         public DateTime ReviewDate { get; set; }
 
@@ -29,13 +29,11 @@ namespace OnlineMarketPLace.models
             ReviewDate = DateTime.Now;
         }
 
-        // Validate Rating (1 to 5)
         public bool IsValidRating()
         {
             return Rating >= 1 && Rating <= 5;
         }
 
-        // Validate Comment
         public bool IsValidComment()
         {
             if (string.IsNullOrWhiteSpace(Comment)) return false;
@@ -44,7 +42,6 @@ namespace OnlineMarketPLace.models
         }
 
 
-        // Display review details
         public void DisplayReview()
         {
             Console.WriteLine($"Review ID: {ReviewId}");

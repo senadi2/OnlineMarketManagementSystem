@@ -13,8 +13,8 @@ namespace OnlineMarketPLace.models
         public string SellerUsername { get; set; }
         public string ProductId { get; set; }
         public int Quantity { get; set; }
-        public decimal TotalPrice { get; set; }  // total cost of the order
-        public string Status { get; set; }       // "Pending", "Shipped", "Delivered", "Cancelled"
+        public decimal TotalPrice { get; set; }  
+        public string Status { get; set; }       
         public DateTime OrderDate { get; set; }
         public DateTime? ShippingDate { get; set; }
         public DateTime? DeliveryDate { get; set; }
@@ -33,7 +33,6 @@ namespace OnlineMarketPLace.models
             OrderDate = DateTime.Now;
         }
 
-        // Method to update order status
         public void UpdateStatus(string newStatus)
         {
             Status = newStatus;
@@ -51,7 +50,6 @@ namespace OnlineMarketPLace.models
             }
         }
 
-        // Display basic order info
         public void DisplayOrderInfo()
         {
             Console.WriteLine($"Order ID: {OrderId}");

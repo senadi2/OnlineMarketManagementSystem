@@ -35,8 +35,8 @@
             this.colStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colRole = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDateJoined = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnBlock = new System.Windows.Forms.Button();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnBlock = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblManageUsers
@@ -97,33 +97,33 @@
             this.colDateJoined.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colDateJoined.Width = 150;
             // 
-            // btnDelete
+            // BtnDelete
             // 
-            this.btnDelete.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(684, 515);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(188, 40);
-            this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDelete.Location = new System.Drawing.Point(684, 515);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(188, 40);
+            this.BtnDelete.TabIndex = 4;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnBlock
+            // BtnBlock
             // 
-            this.btnBlock.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBlock.Location = new System.Drawing.Point(447, 515);
-            this.btnBlock.Name = "btnBlock";
-            this.btnBlock.Size = new System.Drawing.Size(188, 40);
-            this.btnBlock.TabIndex = 3;
-            this.btnBlock.Text = "Block";
-            this.btnBlock.UseVisualStyleBackColor = true;
+            this.BtnBlock.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBlock.Location = new System.Drawing.Point(447, 515);
+            this.BtnBlock.Name = "BtnBlock";
+            this.BtnBlock.Size = new System.Drawing.Size(188, 40);
+            this.BtnBlock.TabIndex = 3;
+            this.BtnBlock.Text = "Block";
+            this.BtnBlock.UseVisualStyleBackColor = true;
             // 
             // ManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1318, 887);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnBlock);
+            this.Controls.Add(this.BtnDelete);
+            this.Controls.Add(this.BtnBlock);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblManageUsers);
             this.Name = "ManageUsers";
@@ -142,7 +142,7 @@
         private System.Windows.Forms.ColumnHeader colStatus;
         private System.Windows.Forms.ColumnHeader colRole;
         private System.Windows.Forms.ColumnHeader colDateJoined;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnBlock;
+        private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.Button BtnBlock;
     }
 }

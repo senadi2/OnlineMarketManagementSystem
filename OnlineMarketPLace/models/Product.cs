@@ -14,9 +14,9 @@ namespace OnlineMarketPLace.models
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int QuantityAvailable { get; set; }
-        public string ImageUrl { get; set; }  // URL or file path of product image
+        public string ImageUrl { get; set; }  
         public DateTime DateAdded { get; set; }
-        public bool IsActive { get; set; }  // To indicate if product is available or removed
+        public bool IsActive { get; set; }  
 
         public Product() { }
 
@@ -33,7 +33,6 @@ namespace OnlineMarketPLace.models
             IsActive = true;
         }
 
-        // Basic validation
         public bool IsValid()
         {
             if (string.IsNullOrWhiteSpace(Name)) return false;
@@ -42,7 +41,6 @@ namespace OnlineMarketPLace.models
             return true;
         }
 
-        // Display product details
         public void DisplayProductInfo()
         {
             Console.WriteLine($"Product ID: {ProductId}");
@@ -56,7 +54,6 @@ namespace OnlineMarketPLace.models
             Console.WriteLine($"Active: {IsActive}");
         }
 
-        // Methods for CRUD can be implemented or handled externally by a data access class
         public void UpdatePrice(decimal newPrice)
         {
             if (newPrice > 0)
