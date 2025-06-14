@@ -135,9 +135,9 @@
             this.lblconfirm.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblconfirm.Location = new System.Drawing.Point(78, 153);
             this.lblconfirm.Name = "lblconfirm";
-            this.lblconfirm.Size = new System.Drawing.Size(143, 21);
+            this.lblconfirm.Size = new System.Drawing.Size(56, 21);
             this.lblconfirm.TabIndex = 11;
-            this.lblconfirm.Text = "Confirm Password";
+            this.lblconfirm.Text = "Email";
             // 
             // lblPassword
             // 
