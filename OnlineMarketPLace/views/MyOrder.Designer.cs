@@ -30,11 +30,11 @@
         {
             this.lblMyOrder = new System.Windows.Forms.Label();
             this.lblTabs = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvData = new System.Windows.Forms.DataGridView();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtTabs = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMyOrder
@@ -57,15 +57,15 @@
             this.lblTabs.TabIndex = 1;
             this.lblTabs.Text = "Tabs";
             // 
-            // dataGridView1
+            // dgvData
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(216, 167);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(352, 150);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvData.Location = new System.Drawing.Point(216, 167);
+            this.dgvData.Name = "dgvData";
+            this.dgvData.RowHeadersWidth = 51;
+            this.dgvData.RowTemplate.Height = 24;
+            this.dgvData.Size = new System.Drawing.Size(352, 150);
+            this.dgvData.TabIndex = 2;
             // 
             // btnCancel
             // 
@@ -87,27 +87,27 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtTabs
             // 
-            this.textBox1.Location = new System.Drawing.Point(161, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(486, 22);
-            this.textBox1.TabIndex = 5;
+            this.txtTabs.Location = new System.Drawing.Point(161, 85);
+            this.txtTabs.Name = "txtTabs";
+            this.txtTabs.Size = new System.Drawing.Size(486, 22);
+            this.txtTabs.TabIndex = 5;
             // 
             // MyOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTabs);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvData);
             this.Controls.Add(this.lblTabs);
             this.Controls.Add(this.lblMyOrder);
             this.Name = "MyOrder";
             this.Text = "MyOrder";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,9 +117,9 @@
 
         private System.Windows.Forms.Label lblMyOrder;
         private System.Windows.Forms.Label lblTabs;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTabs;
     }
 }
