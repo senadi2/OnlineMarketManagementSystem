@@ -14,14 +14,14 @@ namespace OnlineMarketPLace.models
         public Admin() { }
 
         public Admin(int userID, string username, string password, string email, string role)
-            : base(userID, username, password, email) // Call User constructor
+            : base(userID, username, password, email) 
         {
             Role = role;
         }
 
         public override void DisplayInfo()
         {
-            base.DisplayInfo(); // Call parent DisplayInfo()
+            base.DisplayInfo(); 
             Console.WriteLine($"Role: {Role}");
         }
 

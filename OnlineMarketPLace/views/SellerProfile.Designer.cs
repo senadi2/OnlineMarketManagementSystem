@@ -33,8 +33,8 @@
             this.lblRating = new System.Windows.Forms.Label();
             this.txtSellerName = new System.Windows.Forms.TextBox();
             this.txtRating = new System.Windows.Forms.TextBox();
-            this.btnReviewList = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.BtnReviewList = new System.Windows.Forms.Button();
+            this.BtnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSellerProfile
@@ -81,33 +81,33 @@
             this.txtRating.Size = new System.Drawing.Size(511, 22);
             this.txtRating.TabIndex = 4;
             // 
-            // btnReviewList
+            // BtnReviewList
             // 
-            this.btnReviewList.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReviewList.Location = new System.Drawing.Point(149, 326);
-            this.btnReviewList.Name = "btnReviewList";
-            this.btnReviewList.Size = new System.Drawing.Size(133, 32);
-            this.btnReviewList.TabIndex = 5;
-            this.btnReviewList.Text = "ReviewList";
-            this.btnReviewList.UseVisualStyleBackColor = true;
+            this.BtnReviewList.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnReviewList.Location = new System.Drawing.Point(149, 326);
+            this.BtnReviewList.Name = "BtnReviewList";
+            this.BtnReviewList.Size = new System.Drawing.Size(133, 32);
+            this.BtnReviewList.TabIndex = 5;
+            this.BtnReviewList.Text = "ReviewList";
+            this.BtnReviewList.UseVisualStyleBackColor = true;
             // 
-            // btnBack
+            // BtnBack
             // 
-            this.btnBack.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(462, 326);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 32);
-            this.btnBack.TabIndex = 6;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBack.Location = new System.Drawing.Point(462, 326);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(75, 32);
+            this.BtnBack.TabIndex = 6;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseVisualStyleBackColor = true;
             // 
             // SellerProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnReviewList);
+            this.Controls.Add(this.BtnBack);
+            this.Controls.Add(this.BtnReviewList);
             this.Controls.Add(this.txtRating);
             this.Controls.Add(this.txtSellerName);
             this.Controls.Add(this.lblRating);
@@ -127,7 +127,7 @@
         private System.Windows.Forms.Label lblRating;
         private System.Windows.Forms.TextBox txtSellerName;
         private System.Windows.Forms.TextBox txtRating;
-        private System.Windows.Forms.Button btnReviewList;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button BtnReviewList;
+        private System.Windows.Forms.Button BtnBack;
     }
 }

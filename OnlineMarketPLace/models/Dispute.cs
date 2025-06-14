@@ -9,11 +9,11 @@ namespace OnlineMarketPLace.models
     class Dispute
     {
         public string DisputeId { get; set; }
-        public string OrderId { get; set; }       // Which order the dispute is about
+        public string OrderId { get; set; }       
         public string BuyerUsername { get; set; }
         public string SellerUsername { get; set; }
-        public string Reason { get; set; }        // Reason for dispute
-        public string Status { get; set; }        // e.g. "Open", "Under Review", "Resolved", "Closed"
+        public string Reason { get; set; }        
+        public string Status { get; set; }        
         public DateTime DateFiled { get; set; }
         public DateTime? DateResolved { get; set; }
 

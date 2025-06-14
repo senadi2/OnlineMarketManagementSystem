@@ -11,7 +11,6 @@ namespace OnlineMarketPLace.models
     {
         private static Random _random = new Random();
 
-        // Generate a unique alphanumeric ID of given length
         public static string GenerateId(int length = 8)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -23,7 +22,6 @@ namespace OnlineMarketPLace.models
             return new string(id);
         }
 
-        // Validate email format
         public static bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
@@ -31,7 +29,6 @@ namespace OnlineMarketPLace.models
 
             try
             {
-                // Simple email pattern check
                 var pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
                 return Regex.IsMatch(email, pattern, RegexOptions.IgnoreCase);
             }
@@ -41,7 +38,6 @@ namespace OnlineMarketPLace.models
             }
         }
 
-        // Validate password (example: at least 6 chars, one digit)
         public static bool IsValidPassword(string password)
         {
             if (string.IsNullOrEmpty(password) || password.Length < 6)
@@ -59,13 +55,11 @@ namespace OnlineMarketPLace.models
             return hasDigit;
         }
 
-        // Validate rating value (1 to 5)
         public static bool IsValidRating(int rating)
         {
             return rating >= 1 && rating <= 5;
         }
 
-        // Validate quantity (positive number)
         public static bool IsValidQuantity(int quantity)
         {
             return quantity > 0;
