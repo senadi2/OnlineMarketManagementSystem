@@ -104,6 +104,12 @@
     <Compile Include="views\Review.Designer.cs">
       <DependentUpon>Review.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\SellerDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\SellerDashBoard.Designer.cs">
+      <DependentUpon>SellerDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\TrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\Review.resx">
       <DependentUpon>Review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\SellerDashBoard.resx">
+      <DependentUpon>SellerDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\TrackOrder.resx">
       <DependentUpon>TrackOrder.cs</DependentUpon>
