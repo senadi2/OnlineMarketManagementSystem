@@ -23,7 +23,7 @@ namespace OnlineMarketplace
             if (role == "buyer")
             {
                 this.Hide();
-                BuyerDashBoard buyerDashboard = new BuyerDashBoard();
+                BuyerDashboardForm buyerDashboard = new BuyerDashboardForm(username);
                 buyerDashboard.Show();
             }
             else if (role == "seller")

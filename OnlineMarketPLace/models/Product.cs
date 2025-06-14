@@ -14,13 +14,12 @@ namespace OnlineMarketPLace.models
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int QuantityAvailable { get; set; }
-        public string ImageUrl { get; set; }  // URL or file path of product image
         public DateTime DateAdded { get; set; }
         public bool IsActive { get; set; }  // To indicate if product is available or removed
 
         public Product() { }
 
-        public Product(string productId, string sellerUsername, string name, string description, decimal price, int quantityAvailable, string imageUrl)
+        public Product(string productId, string sellerUsername, string name, string description, decimal price, int quantityAvailable)
         {
             ProductId = productId;
             SellerUsername = sellerUsername;
@@ -28,7 +27,6 @@ namespace OnlineMarketPLace.models
             Description = description;
             Price = price;
             QuantityAvailable = quantityAvailable;
-            ImageUrl = imageUrl;
             DateAdded = DateTime.Now;
             IsActive = true;
         }
@@ -51,7 +49,6 @@ namespace OnlineMarketPLace.models
             Console.WriteLine($"Description: {Description}");
             Console.WriteLine($"Price: {Price:C}");
             Console.WriteLine($"Quantity Available: {QuantityAvailable}");
-            Console.WriteLine($"Image URL: {ImageUrl}");
             Console.WriteLine($"Date Added: {DateAdded}");
             Console.WriteLine($"Active: {IsActive}");
         }

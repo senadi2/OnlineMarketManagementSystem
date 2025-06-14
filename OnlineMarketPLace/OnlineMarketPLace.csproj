@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\AuthService.cs" />
+    <Compile Include="DataBase\ProductService.cs" />
     <Compile Include="models\Admin.cs" />
     <Compile Include="models\Buyer.cs" />
     <Compile Include="models\Dispute.cs" />
@@ -166,12 +167,6 @@
     <Compile Include="views\ViewProductReviews.Designer.cs">
       <DependentUpon>ViewProductReviews.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\DashBoardForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\DashBoardForm.Designer.cs">
-      <DependentUpon>DashBoardForm.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -228,9 +223,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\ViewProductReviews.resx">
       <DependentUpon>ViewProductReviews.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\DashBoardForm.resx">
-      <DependentUpon>DashBoardForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -145,6 +145,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "TrackOrder";
             this.Text = "TrackOrder";
+            this.Load += new System.EventHandler(this.TrackOrder_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

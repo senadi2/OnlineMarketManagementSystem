@@ -12,9 +12,24 @@ namespace OnlineMarketPLace.views
 {
     public partial class TrackOrder: Form
     {
-        public TrackOrder()
+        private string buyerName;
+
+        public TrackOrder(string buyerName)
         {
             InitializeComponent();
+            this.buyerName = buyerName;
+            LoadTrackingInfo();
         }
+
+        private void LoadTrackingInfo()
+        {
+
+        }
+        private void TrackOrder_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

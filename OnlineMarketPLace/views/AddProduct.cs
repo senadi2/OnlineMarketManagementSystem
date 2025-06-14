@@ -16,5 +16,10 @@ namespace OnlineMarketPLace.views
         {
             InitializeComponent();
         }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

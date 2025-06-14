@@ -107,6 +107,7 @@
             this.Controls.Add(this.lblMyOrder);
             this.Name = "OrderList";
             this.Text = "OrderList";
+            this.Load += new System.EventHandler(this.OrderList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -16,5 +16,10 @@ namespace OnlineMarketPLace.views
         {
             InitializeComponent();
         }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

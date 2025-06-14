@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace OnlineMarketPLace.views
 {
-    public partial class OrderList: Form
+    public partial class OrderList : Form
     {
-        public OrderList()
+        private string buyerName;
+        private string role;
+
+        public OrderList(string buyerName, string role)
         {
             InitializeComponent();
+            this.buyerName = buyerName;
+            this.role = role;
+        }
+
+        private void OrderList_Load(object sender, EventArgs e)
+        {
+            LoadOrders();
+        }
+
+        private void LoadOrders()
+        {
+
         }
     }
 }
+
+
+
+
+

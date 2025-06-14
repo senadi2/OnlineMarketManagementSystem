@@ -38,9 +38,9 @@
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtCatergory = new System.Windows.Forms.TextBox();
-            this.txtImage = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.txtImage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTopic
@@ -131,13 +131,6 @@
             this.txtCatergory.Size = new System.Drawing.Size(441, 22);
             this.txtCatergory.TabIndex = 9;
             // 
-            // txtImage
-            // 
-            this.txtImage.Location = new System.Drawing.Point(168, 252);
-            this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(441, 22);
-            this.txtImage.TabIndex = 10;
-            // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,6 +150,13 @@
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // txtImage
+            // 
+            this.txtImage.Location = new System.Drawing.Point(168, 252);
+            this.txtImage.Name = "txtImage";
+            this.txtImage.Size = new System.Drawing.Size(441, 22);
+            this.txtImage.TabIndex = 10;
             // 
             // AddProduct
             // 
@@ -178,6 +178,7 @@
             this.Controls.Add(this.lblTopic);
             this.Name = "AddProduct";
             this.Text = "AddProduct";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,8 +196,8 @@
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtCatergory;
-        private System.Windows.Forms.TextBox txtImage;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtImage;
     }
 }

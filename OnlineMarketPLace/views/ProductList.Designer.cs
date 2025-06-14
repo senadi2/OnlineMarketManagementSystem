@@ -1,6 +1,6 @@
-﻿namespace OnlineMarketPLace.views
+﻿namespace OnlineMarketplace
 {
-    partial class ProductList
+    partial class ProductListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -107,6 +107,7 @@
             this.Controls.Add(this.lblAvaiProducts);
             this.Name = "ProductList";
             this.Text = "ProductList";
+            this.Load += new System.EventHandler(this.ProductList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
