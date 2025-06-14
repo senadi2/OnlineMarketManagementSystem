@@ -133,7 +133,7 @@
             this.lblDelivery.Name = "lblDelivery";
             this.lblDelivery.Size = new System.Drawing.Size(54, 21);
             this.lblDelivery.TabIndex = 7;
-            this.lblDelivery.Text = "label2";
+            this.lblDelivery.Text = "label7";
             // 
             // TrackOrder
             // 
