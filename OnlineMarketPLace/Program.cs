@@ -19,7 +19,9 @@ namespace OnlineMarketPLace
 
             // --- Admin ---
             Admin admin = new Admin(100, "admin01", "adminpass", "admin@example.com", "admin");
-            admin.DisplayInfo();
+            admin.DisplayInfo();           // Inherited + extended
+            admin.MonitorSystem();
+
 
             Console.WriteLine("\n-----------------------------------\n");
 
