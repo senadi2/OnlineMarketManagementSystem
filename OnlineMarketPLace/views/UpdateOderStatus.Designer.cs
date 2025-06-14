@@ -31,8 +31,8 @@
             this.lblUpdateOrder = new System.Windows.Forms.Label();
             this.lblOrderID = new System.Windows.Forms.Label();
             this.lblNewStatus = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtNewStatus = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -67,19 +67,19 @@
             this.lblNewStatus.TabIndex = 2;
             this.lblNewStatus.Text = "New Status";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(401, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtID.Location = new System.Drawing.Point(175, 86);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(401, 22);
+            this.txtID.TabIndex = 3;
             // 
-            // textBox2
+            // txtNewStatus
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 170);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(401, 22);
-            this.textBox2.TabIndex = 4;
+            this.txtNewStatus.Location = new System.Drawing.Point(175, 170);
+            this.txtNewStatus.Name = "txtNewStatus";
+            this.txtNewStatus.Size = new System.Drawing.Size(401, 22);
+            this.txtNewStatus.TabIndex = 4;
             // 
             // btnUpdate
             // 
@@ -108,8 +108,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNewStatus);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.lblNewStatus);
             this.Controls.Add(this.lblOrderID);
             this.Controls.Add(this.lblUpdateOrder);
@@ -125,8 +125,8 @@
         private System.Windows.Forms.Label lblUpdateOrder;
         private System.Windows.Forms.Label lblOrderID;
         private System.Windows.Forms.Label lblNewStatus;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtNewStatus;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnCancel;
     }
