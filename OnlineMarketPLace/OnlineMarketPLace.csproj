@@ -64,166 +64,97 @@
     <Compile Include="models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <!-- Forms -->
     <Compile Include="views\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\AddProduct.Designer.cs">
-      <DependentUpon>AddProduct.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\AddProduct.Designer.cs" />
     <Compile Include="views\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\AdminDashboard.Designer.cs">
-      <DependentUpon>AdminDashboard.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\AdminDashboard.Designer.cs" />
     <Compile Include="views\BuyerDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\BuyerDashBoard.Designer.cs">
-      <DependentUpon>BuyerDashBoard.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\BuyerDashBoard.Designer.cs" />
     <Compile Include="views\DisputeResolution.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\DisputeResolution.Designer.cs">
-      <DependentUpon>DisputeResolution.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\DisputeResolution.Designer.cs" />
     <Compile Include="views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\LoginForm.Designer.cs" />
     <Compile Include="views\ManageUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ManageUsers.Designer.cs">
-      <DependentUpon>ManageUsers.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\ManageUsers.Designer.cs" />
     <Compile Include="views\OrderList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\OrderList.Designer.cs">
-      <DependentUpon>OrderList.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\OrderList.Designer.cs" />
     <Compile Include="views\PlaceOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\PlaceOrder.Designer.cs">
-      <DependentUpon>PlaceOrder.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\PlaceOrder.Designer.cs" />
     <Compile Include="views\ProductDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ProductDetails.Designer.cs">
-      <DependentUpon>ProductDetails.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\ProductDetails.Designer.cs" />
     <Compile Include="views\ProductList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ProductList.Designer.cs">
-      <DependentUpon>ProductList.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\ProductList.Designer.cs" />
     <Compile Include="views\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Register.Designer.cs">
-      <DependentUpon>Register.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\Register.Designer.cs" />
     <Compile Include="views\Review.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Review.Designer.cs">
-      <DependentUpon>Review.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\Review.Designer.cs" />
     <Compile Include="views\SellerDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\SellerDashBoard.Designer.cs">
-      <DependentUpon>SellerDashBoard.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\SellerDashBoard.Designer.cs" />
     <Compile Include="views\SellerProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\SellerProfile.Designer.cs">
-      <DependentUpon>SellerProfile.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\SellerProfile.Designer.cs" />
     <Compile Include="views\TrackOrder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\TrackOrder.Designer.cs">
-      <DependentUpon>TrackOrder.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\TrackOrder.Designer.cs" />
     <Compile Include="views\UpdateOrderStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\UpdateOrderStatus.Designer.cs">
-      <DependentUpon>UpdateOrderStatus.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\UpdateOrderStatus.Designer.cs" />
     <Compile Include="views\ViewProductReviews.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ViewProductReviews.Designer.cs">
-      <DependentUpon>ViewProductReviews.cs</DependentUpon>
-    </Compile>
+    <Compile Include="views\ViewProductReviews.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="views\AddProduct.resx">
-      <DependentUpon>AddProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\AdminDashboard.resx">
-      <DependentUpon>AdminDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\BuyerDashBoard.resx">
-      <DependentUpon>BuyerDashBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\DisputeResolution.resx">
-      <DependentUpon>DisputeResolution.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\ManageUsers.resx">
-      <DependentUpon>ManageUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\OrderList.resx">
-      <DependentUpon>OrderList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\PlaceOrder.resx">
-      <DependentUpon>PlaceOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\ProductDetails.resx">
-      <DependentUpon>ProductDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\ProductList.resx">
-      <DependentUpon>ProductList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\Register.resx">
-      <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\Review.resx">
-      <DependentUpon>Review.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\SellerDashBoard.resx">
-      <DependentUpon>SellerDashBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\SellerProfile.resx">
-      <DependentUpon>SellerProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\TrackOrder.resx">
-      <DependentUpon>TrackOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\UpdateOrderStatus.resx">
-      <DependentUpon>UpdateOrderStatus.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\ViewProductReviews.resx">
-      <DependentUpon>ViewProductReviews.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="views\AddProduct.resx" />
+    <EmbeddedResource Include="views\AdminDashboard.resx" />
+    <EmbeddedResource Include="views\BuyerDashBoard.resx" />
+    <EmbeddedResource Include="views\DisputeResolution.resx" />
+    <EmbeddedResource Include="views\LoginForm.resx" />
+    <EmbeddedResource Include="views\ManageUsers.resx" />
+    <EmbeddedResource Include="views\OrderList.resx" />
+    <EmbeddedResource Include="views\PlaceOrder.resx" />
+    <EmbeddedResource Include="views\ProductDetails.resx" />
+    <EmbeddedResource Include="views\ProductList.resx" />
+    <EmbeddedResource Include="views\Register.resx" />
+    <EmbeddedResource Include="views\Review.resx" />
+    <EmbeddedResource Include="views\SellerDashBoard.resx" />
+    <EmbeddedResource Include="views\SellerProfile.resx" />
+    <EmbeddedResource Include="views\TrackOrder.resx" />
+    <EmbeddedResource Include="views\UpdateOrderStatus.resx" />
+    <EmbeddedResource Include="views\ViewProductReviews.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
