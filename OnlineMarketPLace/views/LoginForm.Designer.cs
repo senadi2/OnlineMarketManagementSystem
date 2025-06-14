@@ -1,4 +1,4 @@
-﻿namespace OnlineMarketPLace.views
+﻿namespace OnlineMarketplace
 {
     partial class LoginForm
     {
@@ -77,6 +77,7 @@
             this.chkshpass.TabIndex = 3;
             this.chkshpass.Text = "Show Password";
             this.chkshpass.UseVisualStyleBackColor = true;
+            this.chkshpass.CheckedChanged += new System.EventHandler(this.chkshpass_CheckedChanged);
             // 
             // btnLogin
             // 
@@ -87,6 +88,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // btnRegister
             // 
@@ -97,6 +99,7 @@
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // txtName
             // 
@@ -111,6 +114,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(226, 22);
             this.txtPassword.TabIndex = 7;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // LoginForm
             // 
@@ -130,7 +134,6 @@
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

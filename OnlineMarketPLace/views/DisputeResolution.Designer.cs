@@ -38,9 +38,10 @@
             // btnDismiss
             // 
             this.btnDismiss.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDismiss.Location = new System.Drawing.Point(765, 548);
+            this.btnDismiss.Location = new System.Drawing.Point(680, 438);
+            this.btnDismiss.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDismiss.Name = "btnDismiss";
-            this.btnDismiss.Size = new System.Drawing.Size(188, 40);
+            this.btnDismiss.Size = new System.Drawing.Size(167, 32);
             this.btnDismiss.TabIndex = 7;
             this.btnDismiss.Text = "Dismiss";
             this.btnDismiss.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // btnResolve
             // 
             this.btnResolve.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResolve.Location = new System.Drawing.Point(528, 548);
+            this.btnResolve.Location = new System.Drawing.Point(469, 438);
+            this.btnResolve.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnResolve.Name = "btnResolve";
-            this.btnResolve.Size = new System.Drawing.Size(188, 40);
+            this.btnResolve.Size = new System.Drawing.Size(167, 32);
             this.btnResolve.TabIndex = 6;
             this.btnResolve.Text = "Resolve";
             this.btnResolve.UseVisualStyleBackColor = true;
@@ -59,9 +61,9 @@
             // 
             this.lblDisputeResolution.AutoSize = true;
             this.lblDisputeResolution.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisputeResolution.Location = new System.Drawing.Point(599, 195);
+            this.lblDisputeResolution.Location = new System.Drawing.Point(532, 156);
             this.lblDisputeResolution.Name = "lblDisputeResolution";
-            this.lblDisputeResolution.Size = new System.Drawing.Size(280, 34);
+            this.lblDisputeResolution.Size = new System.Drawing.Size(241, 29);
             this.lblDisputeResolution.TabIndex = 5;
             this.lblDisputeResolution.Text = "Dispute Resolution";
             // 
@@ -73,9 +75,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(492, 327);
+            this.listView1.Location = new System.Drawing.Point(437, 262);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(490, 97);
+            this.listView1.Size = new System.Drawing.Size(436, 78);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -87,13 +90,14 @@
             // 
             // DisputeResolution
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1441, 929);
+            this.ClientSize = new System.Drawing.Size(1281, 743);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnDismiss);
             this.Controls.Add(this.btnResolve);
             this.Controls.Add(this.lblDisputeResolution);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DisputeResolution";
             this.Text = "DisputeResolution";
             this.ResumeLayout(false);
