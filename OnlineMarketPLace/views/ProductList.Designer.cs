@@ -2,15 +2,8 @@
 {
     partial class ProductListForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,105 +15,102 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.lblMyOrder = new System.Windows.Forms.Label();
+            this.lblTbs = new System.Windows.Forms.Label();
+            this.txtTabs = new System.Windows.Forms.TextBox();
             this.dgvAvailProducts = new System.Windows.Forms.DataGridView();
-            this.btnViewDetails = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.lblAvaiProducts = new System.Windows.Forms.Label();
+            this.BtnCancel = new System.Windows.Forms.Button();
+            this.BtnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailProducts)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblMyOrder
+            // 
+            this.lblMyOrder.AutoSize = true;
+            this.lblMyOrder.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblMyOrder.Location = new System.Drawing.Point(309, 13);
+            this.lblMyOrder.Name = "lblMyOrder";
+            this.lblMyOrder.Size = new System.Drawing.Size(130, 30);
+            this.lblMyOrder.TabIndex = 0;
+            this.lblMyOrder.Text = "My Order";
+            // 
+            // lblTbs
+            // 
+            this.lblTbs.AutoSize = true;
+            this.lblTbs.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
+            this.lblTbs.Location = new System.Drawing.Point(59, 68);
+            this.lblTbs.Name = "lblTbs";
+            this.lblTbs.Size = new System.Drawing.Size(44, 21);
+            this.lblTbs.TabIndex = 1;
+            this.lblTbs.Text = "Tabs";
+            // 
+            // txtTabs
+            // 
+            this.txtTabs.Location = new System.Drawing.Point(140, 69);
+            this.txtTabs.Name = "txtTabs";
+            this.txtTabs.Size = new System.Drawing.Size(100, 22);
+            this.txtTabs.TabIndex = 2;
             // 
             // dgvAvailProducts
             // 
             this.dgvAvailProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAvailProducts.Location = new System.Drawing.Point(153, 156);
+            this.dgvAvailProducts.Location = new System.Drawing.Point(162, 114);
             this.dgvAvailProducts.Name = "dgvAvailProducts";
             this.dgvAvailProducts.RowHeadersWidth = 51;
             this.dgvAvailProducts.RowTemplate.Height = 24;
-            this.dgvAvailProducts.Size = new System.Drawing.Size(489, 287);
-            this.dgvAvailProducts.TabIndex = 19;
+            this.dgvAvailProducts.Size = new System.Drawing.Size(480, 200);
+            this.dgvAvailProducts.TabIndex = 3;
             // 
-            // btnViewDetails
+            // BtnCancel
             // 
-            this.btnViewDetails.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewDetails.Location = new System.Drawing.Point(153, 490);
-            this.btnViewDetails.Name = "btnViewDetails";
-            this.btnViewDetails.Size = new System.Drawing.Size(145, 36);
-            this.btnViewDetails.TabIndex = 18;
-            this.btnViewDetails.Text = "View Details";
-            this.btnViewDetails.UseVisualStyleBackColor = true;
+            this.BtnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnCancel.Location = new System.Drawing.Point(114, 347);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(86, 33);
+            this.BtnCancel.TabIndex = 4;
+            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
-            // btnBack
+            // BtnUpdate
             // 
-            this.btnBack.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(551, 490);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(91, 36);
-            this.btnBack.TabIndex = 17;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnUpdate.Location = new System.Drawing.Point(371, 347);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(90, 33);
+            this.BtnUpdate.TabIndex = 5;
+            this.BtnUpdate.Text = "Update";
+            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(305, 92);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(103, 31);
-            this.btnSearch.TabIndex = 16;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(88, 98);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(188, 22);
-            this.txtSearch.TabIndex = 15;
-            // 
-            // lblAvaiProducts
-            // 
-            this.lblAvaiProducts.AutoSize = true;
-            this.lblAvaiProducts.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvaiProducts.Location = new System.Drawing.Point(280, 29);
-            this.lblAvaiProducts.Name = "lblAvaiProducts";
-            this.lblAvaiProducts.Size = new System.Drawing.Size(247, 30);
-            this.lblAvaiProducts.TabIndex = 14;
-            this.lblAvaiProducts.Text = "Available Products";
-            // 
-            // ProductList
+            // ProductListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 550);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnUpdate);
+            this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.dgvAvailProducts);
-            this.Controls.Add(this.btnViewDetails);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.lblAvaiProducts);
-            this.Name = "ProductList";
-            this.Text = "ProductList";
-            this.Load += new System.EventHandler(this.ProductList_Load);
+            this.Controls.Add(this.txtTabs);
+            this.Controls.Add(this.lblTbs);
+            this.Controls.Add(this.lblMyOrder);
+            this.Name = "ProductListForm";
+            this.Text = "ProductListForm";
+            this.Load += new System.EventHandler(this.ProductListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
+        private System.Windows.Forms.Label lblMyOrder;
+        private System.Windows.Forms.Label lblTbs;
+        private System.Windows.Forms.TextBox txtTabs;
         private System.Windows.Forms.DataGridView dgvAvailProducts;
-        private System.Windows.Forms.Button btnViewDetails;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Label lblAvaiProducts;
+        private System.Windows.Forms.Button BtnCancel;
+        private System.Windows.Forms.Button BtnUpdate;
     }
 }

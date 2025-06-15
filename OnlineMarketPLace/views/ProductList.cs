@@ -1,72 +1,57 @@
-﻿using OnlineMarketPLace.models;
-using OnlineMarketPLace.views;
-using OnlineMarketPLace.services; // Add this for ProductService
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Windows.Forms;
+using OnlineMarketPLace.services;  
+using OnlineMarketPLace.models;
 
 namespace OnlineMarketplace
 {
     public partial class ProductListForm : Form
     {
-        private string searchKeyword;
-        private ProductService productService;
-
-        public ProductListForm(string keyword = "")
+        public ProductListForm()
         {
             InitializeComponent();
-            searchKeyword = keyword;
-            productService = new ProductService(); 
+        }
+
+        private void ProductListForm_Load(object sender, EventArgs e)
+        {
+            LoadProducts();
+        }
+
+        private void OrderList_Load(object sender, EventArgs e)
+        {
             LoadProducts();
         }
 
         private void LoadProducts()
         {
-            List<Product> products = productService.GetProducts(searchKeyword); 
+            ProductService productService = new ProductService();
+            var products = productService.GetProducts(""); // Empty keyword to get all or modify as needed
 
-            dgvAvailProducts.Rows.Clear();
-
-            foreach (var product in products)
-            {
-                dgvAvailProducts.Rows.Add(
-                    product.ProductId,
-                    product.SellerUsername,
-                    product.Name,
-                    product.Description,
-                    product.Price,
-                    product.QuantityAvailable
-                );
-            }
+            dgvAvailProducts.DataSource = products;
         }
 
-        private void BtnSearch_Click(object sender, EventArgs e)
-        {
-            searchKeyword = txtSearch.Text.Trim();
-            LoadProducts();
-        }
-
-        private void BtnViewDetails_Click(object sender, EventArgs e)
-        {
-            if (dgvAvailProducts.CurrentRow != null)
-            {
-                string productId = dgvAvailProducts.CurrentRow.Cells["ProductID"].Value.ToString();
-                ProductDetails detailsForm = new ProductDetails(productId);
-                detailsForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Please select a product to view details.");
-            }
-        }
-
-        private void BtnBack_Click(object sender, EventArgs e)
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void ProductList_Load(object sender, EventArgs e)
+        private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            LoadProducts();
+           
+            if (dgvAvailProducts.CurrentRow != null)
+            {
+               
+                var selectedProduct = dgvAvailProducts.CurrentRow.DataBoundItem as Product;
+                if (selectedProduct != null)
+                {
+                   
+                    MessageBox.Show($"Update product: {selectedProduct.Name}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a product to update.");
+            }
         }
     }
 }

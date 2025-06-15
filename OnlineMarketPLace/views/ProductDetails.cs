@@ -29,7 +29,9 @@ namespace OnlineMarketPLace.views
         {
           
             ProductService service = new ProductService();
-            Product product = service.GetProductById(productId); 
+            Product product = service.GetProductById(int.Parse(productId));
+
+
 
             if (product != null)
             {

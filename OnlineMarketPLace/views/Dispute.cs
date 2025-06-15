@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OnlineMarketPLace.views
 {
-    public partial class DisputeResolution: Form
+    public partial class Dispute: Form
     {
-        public DisputeResolution()
+        public Dispute()
         {
             InitializeComponent();
         }

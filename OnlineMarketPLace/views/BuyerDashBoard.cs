@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OnlineMarketPLace.views;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using OnlineMarketPLace.views;
+using System;
 
 namespace OnlineMarketplace
 {
@@ -20,12 +12,12 @@ namespace OnlineMarketplace
         {
             InitializeComponent();
             buyerName = buyerUsername;
-            lblWelcome.Text = $"Welcome, {buyerUsername}";
+            lblTitle.Text = $"Welcome, {buyerUsername}";
         }
 
         private void BuyerDashBoard_Load(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -36,7 +28,7 @@ namespace OnlineMarketplace
             productList.Show();
         }
 
-        private void BtnViewOrders_Click(object sender, EventArgs e)
+        private void BtnViewOrder_Click(object sender, EventArgs e) // NO 's' at the end
         {
             OrderList orderList = new OrderList(buyerName, "buyer");
             orderList.Show();

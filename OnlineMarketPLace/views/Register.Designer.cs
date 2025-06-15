@@ -2,15 +2,8 @@
 {
     partial class RegisterForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,15 +15,8 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.lbltopic = new System.Windows.Forms.Label();
-            this.BtnRegister = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbAccType = new System.Windows.Forms.ComboBox();
             this.txtConfirmP = new System.Windows.Forms.TextBox();
@@ -40,42 +26,11 @@
             this.lblconfirm = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-
+            this.BtnCancel = new System.Windows.Forms.Button();
+            this.BtnRegister = new System.Windows.Forms.Button();
+            this.lbltopic = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-
-            // 
-            // lbltopic
-            // 
-            this.lbltopic.AutoSize = true;
-            this.lbltopic.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltopic.Location = new System.Drawing.Point(292, 40);
-            this.lbltopic.Name = "lbltopic";
-            this.lbltopic.Size = new System.Drawing.Size(213, 30);
-            this.lbltopic.TabIndex = 0;
-            this.lbltopic.Text = "Create Account  ";
-            // 
-            // BtnRegister
-            // 
-            this.BtnRegister.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegister.Location = new System.Drawing.Point(157, 416);
-            this.BtnRegister.Name = "BtnRegister";
-            this.BtnRegister.Size = new System.Drawing.Size(116, 40);
-            this.BtnRegister.TabIndex = 9;
-            this.BtnRegister.Text = "Register";
-            this.BtnRegister.UseVisualStyleBackColor = true;
-            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(540, 416);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(116, 40);
-            this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // groupBox1
             // 
@@ -87,10 +42,10 @@
             this.groupBox1.Controls.Add(this.lblconfirm);
             this.groupBox1.Controls.Add(this.lblPassword);
             this.groupBox1.Controls.Add(this.lblName);
-            this.groupBox1.Location = new System.Drawing.Point(103, 106);
+            this.groupBox1.Location = new System.Drawing.Point(98, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(605, 274);
-            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account Details";
             // 
@@ -130,7 +85,7 @@
             // lblAccount
             // 
             this.lblAccount.AutoSize = true;
-            this.lblAccount.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblAccount.Location = new System.Drawing.Point(78, 211);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(108, 21);
@@ -140,7 +95,7 @@
             // lblconfirm
             // 
             this.lblconfirm.AutoSize = true;
-            this.lblconfirm.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblconfirm.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblconfirm.Location = new System.Drawing.Point(78, 153);
             this.lblconfirm.Name = "lblconfirm";
             this.lblconfirm.Size = new System.Drawing.Size(56, 21);
@@ -150,7 +105,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblPassword.Location = new System.Drawing.Point(78, 95);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(78, 21);
@@ -160,26 +115,57 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblName.Location = new System.Drawing.Point(78, 38);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(82, 21);
             this.lblName.TabIndex = 9;
             this.lblName.Text = "Username";
             // 
+            // BtnCancel
+            // 
+            this.BtnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnCancel.Location = new System.Drawing.Point(535, 393);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(116, 40);
+            this.BtnCancel.TabIndex = 14;
+            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+            // 
+            // BtnRegister
+            // 
+            this.BtnRegister.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnRegister.Location = new System.Drawing.Point(152, 393);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(116, 40);
+            this.BtnRegister.TabIndex = 13;
+            this.BtnRegister.Text = "Register";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
+            // 
+            // lbltopic
+            // 
+            this.lbltopic.AutoSize = true;
+            this.lbltopic.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lbltopic.Location = new System.Drawing.Point(287, 17);
+            this.lbltopic.Name = "lbltopic";
+            this.lbltopic.Size = new System.Drawing.Size(213, 30);
+            this.lbltopic.TabIndex = 12;
+            this.lbltopic.Text = "Create Account  ";
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 497);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.lbltopic);
             this.Name = "RegisterForm";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
-
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -188,9 +174,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbltopic;
-        private System.Windows.Forms.Button BtnRegister;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbAccType;
         private System.Windows.Forms.TextBox txtConfirmP;
@@ -200,5 +183,8 @@
         private System.Windows.Forms.Label lblconfirm;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Button BtnCancel;
+        private System.Windows.Forms.Button BtnRegister;
+        private System.Windows.Forms.Label lbltopic;
     }
 }

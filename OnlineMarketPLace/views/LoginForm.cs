@@ -3,6 +3,7 @@ using System;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using OnlineMarketPLace.DataBase;
+using System.Xml.Linq;
 
 namespace OnlineMarketplace
 {
@@ -18,7 +19,7 @@ namespace OnlineMarketplace
             string username = txtName.Text;
             string password = txtPassword.Text;
 
-            string role = AuthService.AuthenticateUser(username,password);
+            string role = AuthService.AuthenticateUser(username, password);
 
             if (role == "buyer")
             {
@@ -35,7 +36,7 @@ namespace OnlineMarketplace
             else if (role == "admin")
             {
                 this.Hide();
-                AdminDashboard adminDashboard = new AdminDashboard();
+                AdminDashBoard adminDashboard = new AdminDashBoard();
                 adminDashboard.Show();
             }
             else
@@ -53,9 +54,9 @@ namespace OnlineMarketplace
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-           
+
         }
-        
+
         private void chkshpass_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.UseSystemPasswordChar = !chkshpass.Checked;

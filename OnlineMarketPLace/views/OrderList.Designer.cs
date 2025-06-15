@@ -74,21 +74,21 @@
             this.dgvGrid.Size = new System.Drawing.Size(240, 150);
             this.dgvGrid.TabIndex = 3;
             // 
-            // BtnCancel
+            // btnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancel.Location = new System.Drawing.Point(114, 347);
-            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Name = "btnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(86, 33);
             this.BtnCancel.TabIndex = 4;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
             // 
-            // BtnUpdate
+            // btnUpdate
             // 
             this.BtnUpdate.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnUpdate.Location = new System.Drawing.Point(371, 347);
-            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Name = "btnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(90, 33);
             this.BtnUpdate.TabIndex = 5;
             this.BtnUpdate.Text = "Update";

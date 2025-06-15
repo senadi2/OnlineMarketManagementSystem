@@ -1,26 +1,25 @@
-﻿using MySql.Data.MySqlClient;
-using OnlineMarketPLace.models; // Product class namespace
+﻿using System;
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
+using OnlineMarketPLace.DataBase;
+using OnlineMarketPLace.models;
 
 namespace OnlineMarketPLace.services
 {
     public class ProductService
     {
-        private string connStr = "server=localhost;user id=root;password=;database=online_marketplace_system;";
-
+        // Method to get all products filtered by keyword (e.g., name or category)
         public List<Product> GetProducts(string keyword)
         {
             List<Product> products = new List<Product>();
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (MySqlConnection conn = DBConnection.GetConnection())  //
             {
                 conn.Open();
 
-                string sql = @"SELECT id, seller_id, name, description, price, quantity 
-                               FROM products 
-                               WHERE Name LIKE @keyword OR Description LIKE @keyword";
+                string query = "SELECT id, seller_id, name, description, price, quantity FROM products WHERE name LIKE @keyword";
 
-                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
 
@@ -28,15 +27,17 @@ namespace OnlineMarketPLace.services
                     {
                         while (reader.Read())
                         {
-                            products.Add(new Product
+                            Product product = new Product
                             {
-                                ProductId = reader.GetInt32("id").ToString(), 
-                                SellerUsername = reader.GetInt32("seller_id").ToString(), 
-                                Name = reader.GetString("name"),
-                                Description = reader.GetString("description"),
-                                Price = reader.GetDecimal("price"),
-                                QuantityAvailable = reader.GetInt32("quantity")
-                            });
+                                ProductId = reader["id"].ToString(),
+                                SellerUsername = reader["seller_id"].ToString(),
+                                Name = reader["name"].ToString(),
+                                Description = reader["description"].ToString(),
+                                Price = Convert.ToDecimal(reader["price"]),
+                                QuantityAvailable = Convert.ToInt32(reader["quantity"])
+                            };
+
+                            products.Add(product);
                         }
                     }
                 }
@@ -45,19 +46,18 @@ namespace OnlineMarketPLace.services
             return products;
         }
 
-        public Product GetProductById(string productId)
+        // Method to get a single product by its ID
+        public Product GetProductById(int productId)
         {
             Product product = null;
 
-            using (MySqlConnection conn = new MySqlConnection(connStr))
+            using (MySqlConnection conn = DBConnection.GetConnection())  // ✅ OK
             {
                 conn.Open();
 
-                string sql = @"SELECT ProductId, SellerUsername, Name, Description, Price, QuantityAvailable 
-                               FROM Products 
-                               WHERE ProductId = @productId";
+                string query = "SELECT id, seller_id, name, description, price, quantity FROM products WHERE id = @productId";
 
-                using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@productId", productId);
 
@@ -67,12 +67,12 @@ namespace OnlineMarketPLace.services
                         {
                             product = new Product
                             {
-                                ProductId = reader.GetString("ProductId"),
-                                SellerUsername = reader.GetString("SellerUsername"),
-                                Name = reader.GetString("Name"),
-                                Description = reader.GetString("Description"),
-                                Price = reader.GetDecimal("Price"),
-                                QuantityAvailable = reader.GetInt32("QuantityAvailable")
+                                ProductId = reader["id"].ToString(),
+                                SellerUsername = reader["seller_id"].ToString(),
+                                Name = reader["name"].ToString(),
+                                Description = reader["description"].ToString(),
+                                Price = Convert.ToDecimal(reader["price"]),
+                                QuantityAvailable = Convert.ToInt32(reader["quantity"])
                             };
                         }
                     }
@@ -83,4 +83,3 @@ namespace OnlineMarketPLace.services
         }
     }
 }
-   

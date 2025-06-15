@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.BtnSubmit = new System.Windows.Forms.Button();
+            this.BtnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cmbRating = new System.Windows.Forms.ComboBox();
@@ -49,25 +49,25 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = " Leave a Review   ";
             // 
-            // btnSubmit
+            // BtnSubmit
             // 
-            this.btnSubmit.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(105, 375);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(87, 38);
-            this.btnSubmit.TabIndex = 5;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.BtnSubmit.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSubmit.Location = new System.Drawing.Point(105, 375);
+            this.BtnSubmit.Name = "BtnSubmit";
+            this.BtnSubmit.Size = new System.Drawing.Size(87, 38);
+            this.BtnSubmit.TabIndex = 5;
+            this.BtnSubmit.Text = "Submit";
+            this.BtnSubmit.UseVisualStyleBackColor = true;
             // 
-            // btnCancel
+            // BtnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(617, 375);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(87, 38);
-            this.btnCancel.TabIndex = 6;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.Location = new System.Drawing.Point(617, 375);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(87, 38);
+            this.BtnCancel.TabIndex = 6;
+            this.BtnCancel.Text = "Cancel";
+            this.BtnCancel.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -131,8 +131,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.BtnCancel);
+            this.Controls.Add(this.BtnSubmit);
             this.Controls.Add(this.lblTitle);
             this.Name = "Review";
             this.Text = "Review";
@@ -147,8 +147,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button BtnSubmit;
+        private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cmbRating;

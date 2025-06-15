@@ -43,9 +43,9 @@
             // 
             this.lblManageUsers.AutoSize = true;
             this.lblManageUsers.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManageUsers.Location = new System.Drawing.Point(542, 162);
+            this.lblManageUsers.Location = new System.Drawing.Point(482, 130);
             this.lblManageUsers.Name = "lblManageUsers";
-            this.lblManageUsers.Size = new System.Drawing.Size(218, 34);
+            this.lblManageUsers.Size = new System.Drawing.Size(188, 29);
             this.lblManageUsers.TabIndex = 1;
             this.lblManageUsers.Text = "Manage Users ";
             // 
@@ -61,9 +61,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(274, 316);
+            this.listView1.Location = new System.Drawing.Point(244, 253);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(746, 97);
+            this.listView1.Size = new System.Drawing.Size(664, 78);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -100,32 +101,36 @@
             // BtnDelete
             // 
             this.BtnDelete.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDelete.Location = new System.Drawing.Point(684, 515);
+            this.BtnDelete.Location = new System.Drawing.Point(608, 412);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(188, 40);
+            this.BtnDelete.Size = new System.Drawing.Size(167, 32);
             this.BtnDelete.TabIndex = 4;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnBlock
             // 
             this.BtnBlock.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBlock.Location = new System.Drawing.Point(447, 515);
+            this.BtnBlock.Location = new System.Drawing.Point(397, 412);
+            this.BtnBlock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnBlock.Name = "BtnBlock";
-            this.BtnBlock.Size = new System.Drawing.Size(188, 40);
+            this.BtnBlock.Size = new System.Drawing.Size(167, 32);
             this.BtnBlock.TabIndex = 3;
             this.BtnBlock.Text = "Block";
             this.BtnBlock.UseVisualStyleBackColor = true;
             // 
             // ManageUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1318, 887);
+            this.ClientSize = new System.Drawing.Size(1172, 710);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnBlock);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblManageUsers);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ManageUsers";
             this.Text = "ManageUsers";
             this.ResumeLayout(false);

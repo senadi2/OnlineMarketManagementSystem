@@ -14,10 +14,8 @@ namespace OnlineMarketPLace.models
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int QuantityAvailable { get; set; }
-<<<<<<< HEAD
-=======
         public string ImageUrl { get; set; }  
->>>>>>> 7f07bd1720f77b80256e548a9b1d1a5be9e64028
+
         public DateTime DateAdded { get; set; }
         public bool IsActive { get; set; }  
 

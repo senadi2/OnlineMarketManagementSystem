@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace OnlineMarketPLace.views
 {
-    public partial class AdminDashboard: Form
+    public partial class AdminDashBoard: Form
     {
-        public AdminDashboard()
+        public AdminDashBoard()
         {
             InitializeComponent();
-        }
-
-        private void AdminDashboard_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

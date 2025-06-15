@@ -31,7 +31,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblReviews = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.bBnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -63,21 +63,22 @@
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // btnBack
+            // bBnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(174, 480);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 3;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.bBnBack.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bBnBack.Location = new System.Drawing.Point(174, 480);
+            this.bBnBack.Name = "bBnBack";
+            this.bBnBack.Size = new System.Drawing.Size(89, 38);
+            this.bBnBack.TabIndex = 3;
+            this.bBnBack.Text = "Back";
+            this.bBnBack.UseVisualStyleBackColor = true;
             // 
             // ViewProductReviews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(614, 530);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.bBnBack);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblReviews);
             this.Controls.Add(this.lblTitle);
@@ -93,6 +94,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblReviews;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button bBnBack;
     }
 }
