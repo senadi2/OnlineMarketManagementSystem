@@ -1,25 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OnlineMarketPLace.models;
+using OnlineMarketPLace.services;
+using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace OnlineMarketPLace.views
 {
-    public partial class Review: Form
+    public partial class ReviewForm : Form
     {
-        public Review()
+        private string productId;
+        private string buyerUsername;
+
+        public ReviewForm(string productId, string buyerUsername)
         {
             InitializeComponent();
+            this.productId = productId;
+            this.buyerUsername = buyerUsername;
+        }
+        private void Review_Load (object sender, EventArgs e)
+            {
+
+            }
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            int rating = cmbRating.SelectedIndex + 1;
+            string comment = txtComment.Text.Trim();
+
+            if (rating < 1 || string.IsNullOrEmpty(comment))
+            {
+                MessageBox.Show("Please enter a valid rating and comment.");
+                return;
+            }
+
+            Review review = new Review
+            {
+                ReviewId = Guid.NewGuid().ToString(),
+                ProductId = productId,
+                BuyerUsername = buyerUsername,
+                SellerUsername = new ProductService().GetProductById(int.Parse(productId)).SellerUsername,
+                Rating = rating,
+                Comment = comment,
+                ReviewDate = DateTime.Now
+            };
+
+            ReviewService service = new ReviewService();
+            service.AddReview(review);
+
+            MessageBox.Show("Review submitted successfully!");
+            this.Close();
         }
 
-        private void Review_Load(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

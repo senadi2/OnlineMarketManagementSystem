@@ -53,7 +53,9 @@
   <ItemGroup>
     <Compile Include="DataBase\AuthService.cs" />
     <Compile Include="DataBase\DBConnection.cs" />
+    <Compile Include="DataBase\OrderService.cs" />
     <Compile Include="DataBase\ProductService.cs" />
+    <Compile Include="DataBase\ReviewService.cs" />
     <Compile Include="models\Admin.cs" />
     <Compile Include="models\Buyer.cs" />
     <Compile Include="models\Dispute.cs" />

@@ -1,6 +1,6 @@
 ﻿namespace OnlineMarketPLace.views
 {
-    partial class Review
+    partial class ReviewForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.BtnSubmit = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtComment = new System.Windows.Forms.TextBox();
             this.cmbRating = new System.Windows.Forms.ComboBox();
             this.lblRating = new System.Windows.Forms.Label();
             this.lblCommentT = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtComment);
             this.groupBox1.Controls.Add(this.cmbRating);
             this.groupBox1.Controls.Add(this.lblRating);
             this.groupBox1.Controls.Add(this.lblCommentT);
@@ -83,13 +83,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "customer Review";
             // 
-            // textBox1
+            // txtComment
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 95);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(420, 103);
-            this.textBox1.TabIndex = 11;
+            this.txtComment.Location = new System.Drawing.Point(148, 95);
+            this.txtComment.Multiline = true;
+            this.txtComment.Name = "txtComment";
+            this.txtComment.Size = new System.Drawing.Size(420, 103);
+            this.txtComment.TabIndex = 11;
             // 
             // cmbRating
             // 
@@ -125,7 +125,7 @@
             this.lblCommentT.TabIndex = 8;
             this.lblCommentT.Text = "Comment";
             // 
-            // Review
+            // ReviewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +134,7 @@
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnSubmit);
             this.Controls.Add(this.lblTitle);
-            this.Name = "Review";
+            this.Name = "ReviewForm";
             this.Text = "Review";
             this.Load += new System.EventHandler(this.Review_Load);
             this.groupBox1.ResumeLayout(false);
@@ -150,7 +150,7 @@
         private System.Windows.Forms.Button BtnSubmit;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtComment;
         private System.Windows.Forms.ComboBox cmbRating;
         private System.Windows.Forms.Label lblRating;
         private System.Windows.Forms.Label lblCommentT;

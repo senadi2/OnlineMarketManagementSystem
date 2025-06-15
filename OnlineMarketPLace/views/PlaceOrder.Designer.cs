@@ -1,6 +1,6 @@
 ﻿namespace OnlineMarketPLace.views
 {
-    partial class PlaceOrder
+    partial class PlaceOrderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -155,6 +155,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "PlaceOrder";
             this.Text = "PlaceOrder";
+            this.Load += new System.EventHandler(this.PlaceOrder_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();

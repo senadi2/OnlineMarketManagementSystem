@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineMarketPLace.models
 {
-    class Order
+    public class Order
     {
         public string OrderId { get; set; }
         public string BuyerUsername { get; set; }

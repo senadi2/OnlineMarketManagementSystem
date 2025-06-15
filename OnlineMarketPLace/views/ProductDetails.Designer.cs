@@ -1,6 +1,6 @@
 ﻿namespace OnlineMarketPLace.views
 {
-    partial class ProductDetails
+    partial class ProductDetailsForm
     {
         /// <summary>
         /// Required designer variable.

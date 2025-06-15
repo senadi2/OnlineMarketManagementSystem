@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineMarketPLace.models
 {
-    class Review
+    public class Review
     {
         public string ReviewId { get; set; }
         public string ProductId { get; set; }
