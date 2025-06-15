@@ -50,6 +50,7 @@
             this.BtnCancel.TabIndex = 25;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnSave
             // 
@@ -60,6 +61,7 @@
             this.BtnSave.TabIndex = 24;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // txtCatergory
             // 
@@ -157,6 +159,7 @@
             this.Controls.Add(this.lblTopic);
             this.Name = "AddProduct";
             this.Text = "AddProduct";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

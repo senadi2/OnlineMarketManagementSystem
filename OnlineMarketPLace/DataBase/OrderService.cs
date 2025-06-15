@@ -5,7 +5,6 @@ namespace OnlineMarketPLace.services
 {
     public class OrderService
     {
-
         private static List<Order> _orders = new List<Order>();
 
         // Place an order
@@ -31,6 +30,12 @@ namespace OnlineMarketPLace.services
         public List<Order> GetOrdersBySeller(string sellerUsername)
         {
             return _orders.FindAll(o => o.SellerUsername == sellerUsername);
+        }
+
+        // Get order by ID
+        public Order GetOrderById(string orderId)
+        {
+            return _orders.Find(o => o.OrderId == orderId);
         }
 
         // Cancel an order

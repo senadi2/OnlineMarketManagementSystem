@@ -2,15 +2,8 @@
 {
     partial class ManageUsers
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.lblManageUsers = new System.Windows.Forms.Label();
@@ -42,7 +31,7 @@
             // lblManageUsers
             // 
             this.lblManageUsers.AutoSize = true;
-            this.lblManageUsers.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManageUsers.Font = new System.Drawing.Font("Modern No. 20", 16F, System.Drawing.FontStyle.Bold);
             this.lblManageUsers.Location = new System.Drawing.Point(482, 130);
             this.lblManageUsers.Name = "lblManageUsers";
             this.lblManageUsers.Size = new System.Drawing.Size(188, 29);
@@ -57,14 +46,14 @@
             this.colStatus,
             this.colRole,
             this.colDateJoined});
-            this.listView1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(244, 253);
+            this.listView1.Location = new System.Drawing.Point(256, 240);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(664, 78);
+            this.listView1.Size = new System.Drawing.Size(664, 107);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -100,7 +89,7 @@
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDelete.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.BtnDelete.Location = new System.Drawing.Point(608, 412);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnDelete.Name = "BtnDelete";
@@ -112,7 +101,7 @@
             // 
             // BtnBlock
             // 
-            this.BtnBlock.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBlock.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.BtnBlock.Location = new System.Drawing.Point(397, 412);
             this.BtnBlock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnBlock.Name = "BtnBlock";
@@ -120,8 +109,9 @@
             this.BtnBlock.TabIndex = 3;
             this.BtnBlock.Text = "Block";
             this.BtnBlock.UseVisualStyleBackColor = true;
+            this.BtnBlock.Click += new System.EventHandler(this.BtnBlock_Click);
             // 
-            // ManageUsers
+            // UserManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,11 +121,11 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lblManageUsers);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "ManageUsers";
-            this.Text = "ManageUsers";
+            this.Name = "UserManagementForm";
+            this.Text = "User Management";
+            this.Load += new System.EventHandler(this.ManageUsers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

@@ -1,39 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlineMarketPLace.models
 {
-    class Dispute
+    public class Dispute
     {
-        public string DisputeId { get; set; }
-        public string OrderId { get; set; }       
-        public string BuyerUsername { get; set; }
-        public string SellerUsername { get; set; }
-        public string Reason { get; set; }        
-        public string Status { get; set; }        
-        public DateTime DateFiled { get; set; }
-        public DateTime? DateResolved { get; set; }
+        public string Id { get; set; }
+        public string OrderId { get; set; }
+        public string BuyerUsername { get; set; } 
+        public string Description { get; set; }
+        public string Status { get; set; }
+        public string Resolution { get; set; }
+        public DateTime? DateResolved { get; set; } 
 
         public Dispute() { }
 
-        public Dispute(string disputeId, string orderId, string buyerUsername, string sellerUsername, string reason)
+        public Dispute(string id, string orderId, string buyerUsername, string description, string status, string resolution)
         {
-            DisputeId = disputeId;
+            Id = id;
             OrderId = orderId;
             BuyerUsername = buyerUsername;
-            SellerUsername = sellerUsername;
-            Reason = reason;
-            Status = "Open";
-            DateFiled = DateTime.Now;
+            Description = description;
+            Status = status;
+            Resolution = resolution;
         }
 
         public void UpdateStatus(string newStatus)
         {
             Status = newStatus;
-
             if (newStatus == "Resolved" || newStatus == "Closed")
             {
                 DateResolved = DateTime.Now;
@@ -42,17 +35,14 @@ namespace OnlineMarketPLace.models
 
         public void DisplayDisputeInfo()
         {
-            Console.WriteLine($"Dispute ID: {DisputeId}");
+            Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Order ID: {OrderId}");
             Console.WriteLine($"Buyer: {BuyerUsername}");
-            Console.WriteLine($"Seller: {SellerUsername}");
-            Console.WriteLine($"Reason: {Reason}");
+            Console.WriteLine($"Description: {Description}");
             Console.WriteLine($"Status: {Status}");
-            Console.WriteLine($"Filed On: {DateFiled}");
-
+            Console.WriteLine($"Resolution: {Resolution}");
             if (DateResolved.HasValue)
                 Console.WriteLine($"Resolved On: {DateResolved.Value}");
         }
     }
 }
-    

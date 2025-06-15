@@ -8,27 +8,30 @@ namespace OnlineMarketPLace.models
 {
     public class Product
     {
-        public string ProductId { get; set; }
+        public int ProductId { get; set; }
         public string SellerUsername { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
+        public string Category { get; set; }
         public int QuantityAvailable { get; set; }
-        public string ImageUrl { get; set; }  
+        public int Seller_id { get; set; }
 
         public DateTime DateAdded { get; set; }
         public bool IsActive { get; set; }  
 
         public Product() { }
 
-        public Product(string productId, string sellerUsername, string name, string description, decimal price, int quantityAvailable)
+        public Product(int productId, string sellerUsername, string name, string description, decimal price,string catergoty, int quantityAvailable, int seller_id)
         {
             ProductId = productId;
             SellerUsername = sellerUsername;
             Name = name;
             Description = description;
             Price = price;
+            Category = catergoty;
             QuantityAvailable = quantityAvailable;
+            Seller_id = seller_id;
             DateAdded = DateTime.Now;
             IsActive = true;
         }
@@ -48,6 +51,7 @@ namespace OnlineMarketPLace.models
             Console.WriteLine($"Name: {Name}");
             Console.WriteLine($"Description: {Description}");
             Console.WriteLine($"Price: {Price:C}");
+            Console.WriteLine($"Catergoty: {Category}");
             Console.WriteLine($"Quantity Available: {QuantityAvailable}");
             Console.WriteLine($"Date Added: {DateAdded}");
             Console.WriteLine($"Active: {IsActive}");

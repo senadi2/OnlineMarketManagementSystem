@@ -23,16 +23,25 @@ namespace OnlineMarketPLace.views
 
         }
 
+        private void PlaceOrderForm_Load(object sender, EventArgs e)
+        {
+            // Optional: any additional initialization
+        }
+
         private void LoadProductDetails()
         {
             lblProduct.Text = product.Name;
             lblPrice.Text = product.Price.ToString("C");
+            numQuantity.Value = 1; // default quantity
+            numQuantity.Minimum = 1;
+            numQuantity.Maximum = product.QuantityAvailable;
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            int quantity;
-            if (!int.TryParse(numQuantity.Text, out quantity) || quantity <= 0)
+            int quantity = (int)numQuantity.Value;
+
+            if (quantity <= 0)
             {
                 MessageBox.Show("Please enter a valid quantity.");
                 return;
@@ -45,9 +54,10 @@ namespace OnlineMarketPLace.views
             }
 
             OrderService orderService = new OrderService();
+
             Order order = new Order
             {
-                OrderId = Helper.GenerateId(),
+                OrderId = Helper.GenerateId(),  // Your ID generator helper
                 BuyerUsername = buyerUsername,
                 SellerUsername = product.SellerUsername,
                 ProductId = product.ProductId,

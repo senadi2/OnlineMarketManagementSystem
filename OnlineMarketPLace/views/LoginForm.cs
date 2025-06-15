@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using OnlineMarketPLace.DataBase;
 using System.Xml.Linq;
+using OnlineMarketPlace.views;
 
 namespace OnlineMarketplace
 {
@@ -30,13 +31,13 @@ namespace OnlineMarketplace
             else if (role == "seller")
             {
                 this.Hide();
-                SellerDashBoard sellerDashboard = new SellerDashBoard();
+                SellerDashBoard sellerDashboard = new SellerDashBoard(username);
                 sellerDashboard.Show();
             }
             else if (role == "admin")
             {
                 this.Hide();
-                AdminDashBoard adminDashboard = new AdminDashBoard();
+                AdminDashboardForm adminDashboard = new AdminDashboardForm(username);
                 adminDashboard.Show();
             }
             else

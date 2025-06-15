@@ -1,6 +1,9 @@
-﻿namespace OnlineMarketPLace.views
+﻿using System;
+using System.Windows.Forms;
+
+namespace OnlineMarketPLace.views
 {
-    partial class ReviewForm
+    partial class ReviewForm : Form
     {
         /// <summary>
         /// Required designer variable.
@@ -22,10 +25,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
@@ -47,25 +46,25 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(232, 30);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = " Leave a Review   ";
+            this.lblTitle.Text = "Leave a Review";
             // 
             // BtnSubmit
             // 
-            this.BtnSubmit.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSubmit.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.BtnSubmit.Location = new System.Drawing.Point(105, 375);
             this.BtnSubmit.Name = "BtnSubmit";
             this.BtnSubmit.Size = new System.Drawing.Size(87, 38);
-            this.BtnSubmit.TabIndex = 5;
+            this.BtnSubmit.TabIndex = 1;
             this.BtnSubmit.Text = "Submit";
             this.BtnSubmit.UseVisualStyleBackColor = true;
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.BtnCancel.Location = new System.Drawing.Point(617, 375);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(87, 38);
-            this.BtnCancel.TabIndex = 6;
+            this.BtnCancel.TabIndex = 2;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
             // 
@@ -75,13 +74,13 @@
             this.groupBox1.Controls.Add(this.cmbRating);
             this.groupBox1.Controls.Add(this.lblRating);
             this.groupBox1.Controls.Add(this.lblCommentT);
-            this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Modern No. 20", 9F);
             this.groupBox1.Location = new System.Drawing.Point(105, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(599, 231);
-            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "customer Review";
+            this.groupBox1.Text = "Customer Review";
             // 
             // txtComment
             // 
@@ -89,7 +88,7 @@
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.Size = new System.Drawing.Size(420, 103);
-            this.txtComment.TabIndex = 11;
+            this.txtComment.TabIndex = 1;
             // 
             // cmbRating
             // 
@@ -103,26 +102,26 @@
             this.cmbRating.Location = new System.Drawing.Point(148, 40);
             this.cmbRating.Name = "cmbRating";
             this.cmbRating.Size = new System.Drawing.Size(121, 25);
-            this.cmbRating.TabIndex = 10;
+            this.cmbRating.TabIndex = 0;
             // 
             // lblRating
             // 
             this.lblRating.AutoSize = true;
-            this.lblRating.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRating.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblRating.Location = new System.Drawing.Point(31, 40);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(60, 21);
-            this.lblRating.TabIndex = 9;
+            this.lblRating.TabIndex = 2;
             this.lblRating.Text = "Rating";
             // 
             // lblCommentT
             // 
             this.lblCommentT.AutoSize = true;
-            this.lblCommentT.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommentT.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblCommentT.Location = new System.Drawing.Point(31, 95);
             this.lblCommentT.Name = "lblCommentT";
             this.lblCommentT.Size = new System.Drawing.Size(79, 21);
-            this.lblCommentT.TabIndex = 8;
+            this.lblCommentT.TabIndex = 3;
             this.lblCommentT.Text = "Comment";
             // 
             // ReviewForm
@@ -141,7 +140,6 @@
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

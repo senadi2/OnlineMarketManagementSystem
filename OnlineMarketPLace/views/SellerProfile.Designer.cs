@@ -1,6 +1,6 @@
 ﻿namespace OnlineMarketPLace.views
 {
-    partial class SellerProfile
+    partial class SellerProfileForm
     {
         /// <summary>
         /// Required designer variable.
@@ -115,6 +115,7 @@
             this.Controls.Add(this.lblSellerProfile);
             this.Name = "SellerProfile";
             this.Text = "SellerProfile";
+            this.Load += new System.EventHandler(this.SellerProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

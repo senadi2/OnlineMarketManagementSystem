@@ -99,6 +99,7 @@
             this.Controls.Add(this.lblDisputeResolution);
             this.Name = "Dispute";
             this.Text = "Dispute";
+            this.Load += new System.EventHandler(this.Dispute_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

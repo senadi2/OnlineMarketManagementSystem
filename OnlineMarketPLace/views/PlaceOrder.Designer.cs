@@ -2,15 +2,8 @@
 {
     partial class PlaceOrderForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -60,14 +49,16 @@
             // numQuantity
             // 
             this.numQuantity.Location = new System.Drawing.Point(209, 158);
+            this.numQuantity.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             this.numQuantity.Name = "numQuantity";
             this.numQuantity.Size = new System.Drawing.Size(166, 22);
             this.numQuantity.TabIndex = 16;
+            this.numQuantity.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // lblProductT
             // 
             this.lblProductT.AutoSize = true;
-            this.lblProductT.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductT.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblProductT.Location = new System.Drawing.Point(82, 54);
             this.lblProductT.Name = "lblProductT";
             this.lblProductT.Size = new System.Drawing.Size(72, 21);
@@ -77,7 +68,7 @@
             // lblQuantityT
             // 
             this.lblQuantityT.AutoSize = true;
-            this.lblQuantityT.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityT.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblQuantityT.Location = new System.Drawing.Point(82, 156);
             this.lblQuantityT.Name = "lblQuantityT";
             this.lblQuantityT.Size = new System.Drawing.Size(79, 21);
@@ -87,7 +78,7 @@
             // lblProduct
             // 
             this.lblProduct.AutoSize = true;
-            this.lblProduct.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduct.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblProduct.Location = new System.Drawing.Point(205, 57);
             this.lblProduct.Name = "lblProduct";
             this.lblProduct.Size = new System.Drawing.Size(54, 21);
@@ -97,7 +88,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblPrice.Location = new System.Drawing.Point(205, 111);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(54, 21);
@@ -107,7 +98,7 @@
             // lblPriceT
             // 
             this.lblPriceT.AutoSize = true;
-            this.lblPriceT.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceT.Font = new System.Drawing.Font("Modern No. 20", 10.8F);
             this.lblPriceT.Location = new System.Drawing.Point(82, 108);
             this.lblPriceT.Name = "lblPriceT";
             this.lblPriceT.Size = new System.Drawing.Size(53, 21);
@@ -116,35 +107,37 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnConfirm.Location = new System.Drawing.Point(183, 371);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(136, 35);
             this.btnConfirm.TabIndex = 13;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold);
             this.btnCancel.Location = new System.Drawing.Point(500, 371);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(136, 35);
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(283, 45);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(208, 30);
             this.lblTitle.TabIndex = 11;
             this.lblTitle.Text = " Confirm Order ";
             // 
-            // PlaceOrder
+            // PlaceOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,15 +146,14 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblTitle);
-            this.Name = "PlaceOrder";
-            this.Text = "PlaceOrder";
-            this.Load += new System.EventHandler(this.PlaceOrder_Load);
+            this.Name = "PlaceOrderForm";
+            this.Text = "Place Order";
+            this.Load += new System.EventHandler(this.PlaceOrderForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

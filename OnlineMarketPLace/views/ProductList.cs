@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using OnlineMarketPLace.services;  
+using OnlineMarketPLace.services;
 using OnlineMarketPLace.models;
+using OnlineMarketPLace.views;
 
 namespace OnlineMarketplace
 {
@@ -37,20 +38,35 @@ namespace OnlineMarketplace
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-           
             if (dgvAvailProducts.CurrentRow != null)
             {
-               
                 var selectedProduct = dgvAvailProducts.CurrentRow.DataBoundItem as Product;
                 if (selectedProduct != null)
                 {
-                   
                     MessageBox.Show($"Update product: {selectedProduct.Name}");
                 }
             }
             else
             {
                 MessageBox.Show("Please select a product to update.");
+            }
+        }
+
+        // --- Added: View Details button handler to open ProductDetailsForm ---
+        private void BtnViewDetails_Click(object sender, EventArgs e)
+        {
+            if (dgvAvailProducts.CurrentRow != null)
+            {
+                var selectedProduct = dgvAvailProducts.CurrentRow.DataBoundItem as Product;
+                if (selectedProduct != null)
+                {
+                    ProductDetailsForm detailsForm = new ProductDetailsForm(selectedProduct.ProductId.ToString());
+                    detailsForm.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a product to view details.");
             }
         }
     }

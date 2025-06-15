@@ -1,6 +1,6 @@
 ﻿namespace OnlineMarketPLace.views
 {
-    partial class TrackOrder
+    partial class TrackOrderForm
     {
         /// <summary>
         /// Required designer variable.

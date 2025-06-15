@@ -12,8 +12,8 @@ namespace OnlineMarketPLace.models
 
         public Buyer() { }
 
-        public Buyer(int userID, string username, string password, string email, string shippingAddress)
-            : base(userID, username, password, email)
+        public Buyer(int userID, string username, string password, string email, string role, DateTime createdAt, string shippingAddress)
+     : base(userID, username, password, email, role, createdAt)
         {
             ShippingAddress = shippingAddress;
         }

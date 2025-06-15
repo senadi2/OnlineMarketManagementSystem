@@ -11,7 +11,7 @@ namespace OnlineMarketPLace.models
         public string OrderId { get; set; }
         public string BuyerUsername { get; set; }
         public string SellerUsername { get; set; }
-        public string ProductId { get; set; }
+        public int ProductId { get; set; }
         public int Quantity { get; set; }
         public decimal TotalPrice { get; set; }  
         public string Status { get; set; }       
@@ -21,7 +21,7 @@ namespace OnlineMarketPLace.models
 
         public Order() { }
 
-        public Order(string orderId, string buyerUsername, string sellerUsername, string productId, int quantity, decimal totalPrice)
+        public Order(string orderId, string buyerUsername, string sellerUsername, int productId,  int quantity, decimal totalPrice)
         {
             OrderId = orderId;
             BuyerUsername = buyerUsername;

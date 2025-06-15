@@ -7,17 +7,23 @@ namespace OnlineMarketPLace.models
     {
         public int UserID { get; set; }
         public string Username { get; set; }
-        public string Password { get; set; }
         public string Email { get; set; }
+        public string Status { get; set; }
+        public string Role { get; set; }
+        public DateTime DateJoined { get; set; }
+
+
 
         public User() { }
 
-        public User(int userID, string username, string password, string email)
+        public User(int userID, string username, string email, string status, string role, DateTime datejoined)
         {
             UserID = userID;
             Username = username;
-            Password = password;
             Email = email;
+            Status = status;
+            Role = role;
+            DateJoined = datejoined;
         }
 
         public virtual void DisplayInfo()
@@ -25,6 +31,9 @@ namespace OnlineMarketPLace.models
             Console.WriteLine($"ID: {UserID}");
             Console.WriteLine($"Username: {Username}");
             Console.WriteLine($"Email: {Email}");
+            Console.WriteLine($"Status: {Status}");
+            Console.WriteLine($"Role: {Role}");
+            Console.WriteLine($"Date Joined: {DateJoined}");
         }
 
         public void Login()

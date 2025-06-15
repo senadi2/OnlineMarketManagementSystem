@@ -1,35 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OnlineMarketPLace.models;
+using OnlineMarketPLace.services;
+using System;
 using System.Windows.Forms;
 
 namespace OnlineMarketPLace.views
 {
-    public partial class TrackOrder: Form
+    public partial class TrackOrderForm : Form
     {
-        private string buyerName;
+        private readonly int orderId;
 
-        public TrackOrder(string buyerName)
+        public TrackOrderForm(int orderId)
         {
             InitializeComponent();
-            this.buyerName = buyerName;
-            LoadTrackingInfo();
+            this.orderId = orderId;
+            LoadOrderDetails();
         }
 
-        private void LoadTrackingInfo()
-        {
-
-        }
         private void TrackOrder_Load(object sender, EventArgs e)
         {
 
         }
 
+        private void LoadOrderDetails()
+        {
+            OrderService orderService = new OrderService();
+            Order order = orderService.GetOrderById(orderId.ToString());
 
+            if (order != null)
+            {
+                lblOrderId.Text = order.OrderId;
+                lblStatus.Text = order.Status;
+                lblDelivery.Text = order.OrderDate.ToString("g"); // General date/time pattern
+            }
+            else
+            {
+                MessageBox.Show("Order not found.");
+                this.Close();
+            }
+        }
     }
 }
